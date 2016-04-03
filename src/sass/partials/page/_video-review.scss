@@ -128,3 +128,8 @@ $review-gutter:30*(100%)/1170;
         background:#eee;
     }
 }
+
+//фикс для модального окна
+.video-container iframe{
+    border:0;
+}

@@ -7,6 +7,7 @@
 // меняем стиль хидера на главной
 // хиро слайдер
 // слайдер просмотров
+// видео в модальном окне
 
 jQuery(document).ready(function ($) {
     //
@@ -244,5 +245,36 @@ jQuery(document).ready(function ($) {
 
     if ($('.js-history').length) {
         initHistorySlider();
-    }
+    };
+
+    //
+    // видео в модальном окне
+    //---------------------------------------------------------------------------------------
+    $('.js-videolink').on('click', function (e) {
+        e.preventDefault();
+        var link = $(this).attr('href'),
+            id = getYoutubeID(link);
+
+        if (id) {
+            $('#videomodal').find('iframe').attr('src', 'https://www.youtube.com/embed/' + id + '?rel=0&amp;showinfo=0;autoplay=1');
+            $('#videomodal').openModal({
+                complete: function () {
+                    $('#videomodal').find('iframe').attr('src', '');
+                }
+            });
+        }
+
+        function getYoutubeID(url) {//парсим youtube-ссылку, возвращаем id видео
+            var regExp = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
+            var match = url.match(regExp),
+                urllink;
+            if (match && match[1].length == 11) {
+                urllink = match[1];
+            } else {
+                urllink = false;
+            }
+            return urllink;
+        }
+    });
+
 });
