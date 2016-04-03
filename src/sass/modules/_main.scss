@@ -1,0 +1,79 @@
+@import "base";
+
+
+/*Helper classes*/
+.g-brand-color{
+    color:$primary;
+}
+
+
+.g-clearlist{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.g-hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.g-visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.g-invisible {
+    visibility: hidden;
+}
+
+.g-clearfix{
+    @include clearfix; //bourbon clearfix
+}
+.lt-ie9{
+    .g-clearfix{
+        @include clear-fix();
+    }
+}
+
+.va{
+    @include vertical-align();
+}
+
+.vca{
+    @include vertical-centered-align();
+}
+
+.g-column{
+    float:left;
+    width:100%;
+    min-height:1px;
+}
+
+.g-img-centered{
+    @include img-centered;
+}
+
+.g-shadow-hover{
+    @include shadow-hover;
+}
+
+
+//логотипы-картинки в таблице
+img.g-table-logo{
+    max-height:18px;
+
+    @include media($tablet){
+        max-height:none;
+        max-width:100%;
+        height:auto;
+    }
+}
+
+

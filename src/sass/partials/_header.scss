@@ -1,0 +1,89 @@
+@import "../modules/base";
+
+@import "header/_logo.scss";
+@import "header/_search.scss";
+
+
+/*Site Header*/
+.b-header{
+    nav{
+        background:#fff;
+        color:$text-color;
+
+        .icon-triangle-down{ //materialize иконка arrow-down глючит в ие!
+            display:inline-block;
+            vertical-align:middle;
+            font-size:5px;
+        }
+    }
+}
+
+@include media($tablet){
+    .b-header{
+        height:94px;
+    }
+
+    .b-header nav{
+        height:94px;
+        line-height:94px;
+
+        i{
+            height:94px;
+            line-height:94px;
+        }
+    }
+}
+
+/*Mobile callback & menu buttons*/
+.b-header__btn{
+    float:right !important;
+    color:$border-color;
+    border:none;
+    background:none;
+    width:40px;
+
+    i{
+        font-size:26px !important;
+    }
+
+    &:focus{
+        color:#fff;
+    }
+
+    @include media($small){
+        height:64px !important; 
+    }
+
+    @include media($tablet){
+        display:none;
+    }
+}
+
+
+
+
+/*Header - home page*/
+.b-header,
+.b-header nav,
+.b-header nav i{
+    @include transition(background, heigth, line-height, box-shadow);
+    @include transition-duration(.3s);
+}
+
+@include media($tablet){
+     .b-header--hero{
+        height:134px;
+    }
+
+    .b-header--hero nav{
+        height:134px;
+        line-height:134px;
+        box-shadow:none;
+        background:none;
+
+        i{
+            height:134px;
+            line-height:134px;
+        }
+    }
+}

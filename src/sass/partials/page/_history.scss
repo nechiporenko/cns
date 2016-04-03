@@ -1,0 +1,129 @@
+﻿@import "../../modules/_base.scss";
+/*History section*/
+.b-history{
+    padding:20px 0 40px;
+
+    .bx-wrapper{
+        margin:0;
+    }
+}
+
+.b-history__slider{
+    position:relative;
+}
+
+.b-history__title{
+    @extend .b-page__subtitle;
+}
+
+.b-history__list{
+    margin:0 -10px; padding:0;
+    @extend .g-clearfix;
+}
+
+.b-history__item{
+    float:left;
+    width:372px;
+    padding-right:40px;
+    padding-left:12px;
+}
+
+.b-history__inner{
+    margin:0 0 10px 0;
+    padding:0;
+   
+    position:relative;
+
+    @extend .g-shadow-hover;
+}
+
+.b-history__link{
+    display:block;
+    position:relative;
+
+    &:after{
+        content:'';
+        display:block;
+        padding-top:(11000% /320);
+    }
+}
+
+.b-history__img{
+    @extend .g-img-centered;
+}
+
+.b-history__content{
+    padding:10px 15px 15px;
+    position:relative;
+}
+.b-history__subtitle{
+    display:block;
+    margin:0 -15px 8px;
+    padding:0 15px;
+    height:70px;
+    font-size:(2200% / 15);
+    line-height:1.45;
+    overflow:hidden;
+    border-bottom:1px solid #d9d9d9;
+}
+
+.b-history__price{
+    font-size:16px;
+    color:#6c6c6c;
+    white-space:nowrap;
+}
+
+.b-history__btn{
+    background:$primary;
+    position:absolute;
+    right:15px;
+    bottom:20px;
+
+    i{
+        font-size:1rem;
+    }
+
+    &:hover{
+        background:darken($primary, 10%);
+    }
+}
+
+.b-history__del{
+    position:absolute;
+    top:0;
+    right:-22px;
+    color:#6c6c6c;
+    cursor:pointer;
+
+    &:hover,
+    &:active{
+        color:$primary;
+    }
+}
+
+
+//навигация
+.b-history__nav{
+    position:absolute;
+    right:0;
+    top:100px;
+}
+
+.b-history__arrow{
+    display:block;
+
+    .bx-next,
+    .bx-prev{
+        color:#6c6c6c;
+        font-size:18px;
+
+        &:hover,
+        &:active{
+            color:$primary;
+        }
+
+        &.disabled{
+            display:none;
+        }
+    }
+}

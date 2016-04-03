@@ -1,0 +1,258 @@
+﻿@import "../../modules/_base.scss";
+/*Hero & Slider*/
+.b-hero{
+    position:relative;
+    overflow:hidden;
+
+    &:after{
+        content:'';
+        display:block;
+        padding-top:59.9194%;
+    }
+
+    @include media($tablet){
+        margin-top:-134px; //высота хидера на главной странице
+        height:595px;
+        &:after{
+            display:none;
+        }
+    }
+}
+
+.b-hero__inner{
+    position:absolute;
+    top:0; right:0; left:0; bottom:0;
+
+    .bx-wrapper,
+    .bx-viewport{
+        height:100% !important;
+    }
+}
+
+.b-hero__slider{
+    height:100%;
+    margin:0; padding:0;
+}
+
+.b-hero__item{
+    height:100%;
+}
+
+.b-hero__img{
+    height:100%;
+    max-width:1300px;
+    margin:0 auto;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.b-hero__content{
+    height:100%;
+    max-width:1190px;
+    padding:0 10px;
+    margin:0 auto;
+    position:relative;
+    @extend .g-clearfix;
+}
+
+//подписи слайдера
+.b-hero__caption{
+    float:right;
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    line-height:1.3;
+    position:absolute;
+    top:5%;
+    right:0px;
+    @include transition-property(opacity, transform);
+    @include transition-duration(1s);
+    @include transition-timing-function(ease);
+
+    @include media($small){
+        top:15%;
+        right:40px;
+        font-size:18px;
+    }
+
+    @include media($tablet){
+        top:35%;
+        font-size:32px;
+    }
+
+    @include media($large){
+        right:10%;
+    }
+}
+
+
+
+.b-hero__caption--left{
+    right:auto;
+    left:0;
+
+    @include media($large){
+        left:10%;
+    }
+}
+
+.js{//анимация
+    .b-hero__caption{
+        opacity:0;
+        @include transform(translate(-50px, 0));
+
+        @include media($large){
+            @include transform(translate(50px, 0));
+        }
+
+        &.active{
+            @include transform(translate(0, 0));
+            opacity:1;
+        }
+    }
+
+    .b-hero__caption--left{
+        @include transform(translate(50px, 0));
+
+        @include media($large){
+            @include transform(translate(-50px, 0));
+        }
+    }
+
+    .b-hero__caption--top{
+        @include transform(translate(0, -50px));
+    }
+}
+
+//нижний постоянный контент
+.b-hero__main{
+    position:absolute;
+    left:0;
+    bottom:25px;
+    width:100%;
+    color:#fff;
+    z-index:102;//над слоем с навигацией
+}
+
+.b-hero__title{
+    display:inline-block;
+    vertical-align:middle;
+    margin:10px 20px 10px 0;
+    font-size:(2500% / 15);
+    font-weight:600;
+    line-height:1.2;
+    letter-spacing:-.8px;
+}
+
+.b-hero__btn{
+    height:50px;
+    line-height:50px;
+    padding:0 15px;
+    vertical-align:middle;
+    background:$primary;
+    font-size:23px;
+    text-transform:none;
+
+    &:hover{
+        background:$primary-alt;
+    }
+}
+
+
+//блок с телефоном
+.b-hero{
+    .b-phone{
+        margin:0;
+        display:none;
+
+        @include media(min-width 550px){
+           display:block;
+        }
+    }
+    
+    .b-phone__link{
+        display:inline-block;
+        vertical-align:middle;
+        margin:10px 10px 10px 0;
+    }
+
+    .b-phone__num{
+        color:#fff;
+        font-size:200%;
+    }
+
+    .b-phone__content{
+        position:relative;
+        padding:5px 0 0 65px;
+        min-height:54px;
+        width:auto;
+        display:none;
+
+        @include media($large){
+            display:inline-block;
+            vertical-align:middle;
+        }
+    }
+
+    .b-phone__icon{
+        float:none;
+        display:block;
+        margin:0;
+        position:absolute;
+        top:0; left:0;
+    }
+}
+
+//навигация слайдера
+.b-hero__pager{
+    position:absolute;
+    top:0; left:0; right:0;
+    bottom:0;
+    z-index:101;//под слоем с общим контентом
+    display:none;
+
+    @include media(min-width 750px){
+        display:block;
+    }
+}
+
+.b-hero__nav{
+    position:absolute;
+    right:10px;
+    @extend .va;
+    z-index:100;
+}
+
+.b-hero__dot{
+    display:block;
+    margin:5px 0;
+    @include size(26px);
+    border:2px solid #4a4a4a;
+    border-radius:50%;
+    cursor:pointer;
+    position:relative;
+
+    &:before{
+        content:'';
+        display:none;
+        @include size(18px);
+        @extend .vca;
+        background:#4a4a4a;
+        border-radius:50%;
+    }
+
+    &:hover{
+        border-color:$primary;
+        &:before{
+            display:block;
+            background:$primary;
+        }
+    }
+
+    &.active{
+        &:before{
+            display:block;
+        }
+    }
+}

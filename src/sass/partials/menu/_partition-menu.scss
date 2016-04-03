@@ -1,0 +1,76 @@
+﻿@import "../../modules/_base.scss";
+/*Primary Partitions menu*/
+.b-part-menu{
+    margin:0;
+}
+.b-part-menu__item{
+    display:block;
+    margin-bottom:8px;
+    padding-left:50px;
+    position:relative;
+}
+
+
+.b-part-menu--noimg{
+    margin-bottom:15px;
+    .b-part-menu__item{
+        padding:0;
+    }
+}
+
+.b-part-menu__img{
+    margin:0;
+    padding:0;
+    width:33px;
+    height:40px;
+    position:absolute;
+    top:0;
+    left:0;
+    color:#fff;
+    font-size:14px;
+
+    svg{
+        position:absolute;
+        width:100%;
+        height:auto;
+        top:0; left:0;
+        z-index:-1;
+    }
+
+    path{
+        fill:$primary-alt1;
+        @include transition(fill .2s ease-in);
+    }
+
+    i{
+        position:absolute;
+        top:25%;
+        left:50%;
+        @include transform(translate(-50%, -25%));
+    }
+}
+
+.b-part-menu__img--large{
+    font-size:16px;
+}
+
+.b-part-menu__title,
+.b-part-menu__link{
+    color:$text-color;
+    @include transition(color .15s);
+    line-height:1.3;
+
+    &:hover,
+    &:active{
+        color:$primary;
+    }
+}
+
+.b-part-menu__title{
+    font-size:(2100%/15);
+    font-weight:600;
+}
+
+.b-part-menu__link{
+    font-size:(1700%/15);
+}

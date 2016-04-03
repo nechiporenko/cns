@@ -1,0 +1,91 @@
+﻿@import "../../modules/_base.scss";
+/*Service List*/
+.b-service-list{
+    margin:0;
+    @include media($tablet){
+        padding-right:10px;
+    }
+}
+.b-service-list__item{
+    @extend .g-clearfix;
+    display:block;
+    padding:20px;
+    margin-bottom:25px;
+    border-left:4px solid $border-color;
+    @extend .g-shadow-hover;
+
+    @include media($tablet){
+        padding:20px 30px;
+    }
+
+    &:hover{
+        border-left-color:$primary-alt1;
+
+        .b-service-list__title i{
+            opacity:1;
+        }
+    }
+}
+
+.b-service-list__info{
+    @extend .g-column;
+
+    @include media($large){
+        width:70%;
+        min-height:120px;
+    }
+}
+
+.b-service-list__action{
+    min-height:1px;
+
+    @include media($large){
+        float:right;
+        padding-top:10px;
+    }
+}
+
+.b-service-list__title{
+    display:block;
+    font-size:146%;
+    color:$primary;
+    line-height:1.1;
+
+
+    i{
+        color:$border-color;
+        @include transition(opacity .3s ease);
+        opacity:0;
+    }
+}
+
+.b-service-list__btn{
+    margin-bottom:15px;
+
+    &:hover{
+        background:$primary-alt1;
+    }
+}
+
+.b-service-list__link{
+    display:block;
+    padding-left:20px;
+    font-size:16px;
+    color:#3a3a3a;
+    font-weight:700;
+
+
+    &:hover,
+    &:active{
+        color:$primary;
+    }
+
+    @include media($small){
+        float:right;
+    }
+
+    @include media($large){
+        float:none;
+    }
+}
+

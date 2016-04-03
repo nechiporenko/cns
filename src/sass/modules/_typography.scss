@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,800&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700&subset=latin,cyrillic);
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../font/icomoon/icomoon.eot?9b5zd1');
+    src:    url('../font/icomoon/icomoon.eot?9b5zd1#iefix') format('embedded-opentype'),
+        url('../font/icomoon/icomoon.ttf?9b5zd1') format('truetype'),
+        url('../font/icomoon/icomoon.woff?9b5zd1') format('woff'),
+        url('../font/icomoon/icomoon.svg?9b5zd1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-triangle-down:before {
+    content: "\e915";
+}
+.icon-google-plus:before {
+    content: "\e900";
+}
+.icon-twitter:before {
+    content: "\e901";
+}
+.icon-vk:before {
+    content: "\e902";
+}
+.icon-facebook:before {
+    content: "\e903";
+}
+.icon-credit-card:before {
+    content: "\e913";
+}
+.icon-menu:before {
+    content: "\e914";
+}
+.icon-arrow-left:before {
+    content: "\e904";
+}
+.icon-arrow-right:before {
+    content: "\e905";
+}
+.icon-check:before {
+    content: "\e906";
+}
+.icon-cross:before {
+    content: "\e907";
+}
+.icon-dollar:before {
+    content: "\e908";
+}
+.icon-hands:before {
+    content: "\e909";
+}
+.icon-house:before {
+    content: "\e90a";
+}
+.icon-left:before {
+    content: "\e90b";
+}
+.icon-phone:before {
+    content: "\e90c";
+}
+.icon-play:before {
+    content: "\e90d";
+}
+.icon-right:before {
+    content: "\e90e";
+}
+.icon-search:before {
+    content: "\e90f";
+}
+.icon-user:before {
+    content: "\e910";
+}
+.icon-car:before {
+    content: "\e911";
+}
+.icon-swimming:before {
+    content: "\e912";
+}

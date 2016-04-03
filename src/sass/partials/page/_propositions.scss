@@ -1,0 +1,120 @@
+﻿@import "../../modules/_base.scss";
+/*Propositions*/
+.b-prop{
+
+}
+.b-prop__list{
+    margin:0;
+    padding:0;
+    @extend .g-clearfix;
+}
+
+.b-prop__item{
+    @include span-columns(12);
+
+    @include media($small){
+        @include span-columns(6);
+        @include omega(2n);
+    }
+
+    @include media($tablet){
+        @include omega-reset(2n);
+        @include span-columns(3);
+    }
+}
+
+.b-prop__link{
+    display:block;
+    max-width:272px;
+    margin:0 auto 30px;
+    color:$text-color;
+}
+
+.b-prop__inner{
+    margin:0;
+    padding:0;
+    background:#fff;
+    border-top:4px solid #fff;
+    border-bottom:4px solid #fff;
+    @extend .g-shadow-hover;
+
+    &:hover{
+        .b-prop__arrow{
+            opacity:1;
+        }
+    }
+}
+.b-prop__company{
+    height:40px;
+    padding:0 15px;
+    border-bottom:4px solid #fff;
+    position:relative;
+}
+.b-prop__logo{
+    display:block;
+    max-width:100%;
+    height:auto;
+    max-height:30px;
+    @extend .va;
+}
+.b-prop__thumb{
+    position:relative;
+
+    &:after{
+        content:'';
+        display:block;
+        padding-top:(10000%/272);
+    }
+}
+.b-prop__img{
+    @extend .g-img-centered;
+}
+.b-prop__content{
+    padding:10px 15px 20px;
+    position:relative;
+    color:#6c6c6c;
+
+    p{
+        margin:10px 0;
+    }
+}
+.b-prop__title{
+    display:block;
+    font-size:(2000%/15);
+    color:$primary;
+    line-height:1.25;
+}
+
+.b-prop__subtitle{
+    font-size:(2200%/15);
+    color:$text-color;
+}
+
+.b-prop__arrow{
+    font-size:18px;
+    position:absolute;
+    bottom:5px;
+    right:15px;
+    opacity:0;
+    @include transition(opacity .3s);
+}
+
+.b-prop__btn{
+    background:$primary;
+    width:100%;
+
+    &:hover{
+        background:darken($primary, 10%);
+    }
+}
+
+//спецпредложение
+.b-prop__inner--alt{
+    border-top-color:$primary-alt1;
+    border-bottom-color:$primary-alt1;
+
+    .b-prop__content{
+        background:#ffec92;
+    }
+}
+

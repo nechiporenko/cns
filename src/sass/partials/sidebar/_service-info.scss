@@ -1,0 +1,33 @@
+﻿@import "../../modules/_base.scss";
+/*Services sidebar*/
+.b-service-info{
+    color:#231f20;
+    p{
+        margin-top:0;
+    }
+
+    ol{
+        margin-top:0;
+        padding-left:20px;
+
+        li{
+            margin-bottom:15px;
+        }
+    }
+}
+.b-service-info__title{
+    display:block;
+    margin:0 0 5px;
+    line-height:1.1;
+    font-family:$font-sans-alt;
+    font-weight:600;
+    color:$primary;
+    font-size:120%;
+
+    i{
+        display:inline-block;
+        vertical-align:bottom;
+        margin-right:5px;
+        color:$border-color;
+    }
+}

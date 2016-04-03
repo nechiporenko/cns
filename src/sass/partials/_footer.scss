@@ -1,0 +1,148 @@
+@import "../modules/base";
+
+/*Site Footer*/
+.b-footer{
+    margin-top:40px;
+    padding:30px 10px;
+    background:#eee;
+    font-size:16px;
+
+    .row{
+        margin-bottom:0;
+    }
+
+    a{
+        @include transition(color .15s ease-in);
+    }
+}
+
+.b-footer__title{
+    display:block;
+    margin:0 0 17px;
+    line-height:1.1;
+    font-weight:700;
+    color:$text-color;
+    font-size:16px;
+}
+
+.f-menu{
+    padding:0;
+    margin:0 0 20px;
+
+    @include media($tablet){
+        margin-bottom:0;
+    }
+}
+
+.f-menu__item{
+    margin-bottom:10px;
+}
+
+.f-menu__link{
+    color:$text-color;
+
+    &:hover,
+    &:active{
+        color:$primary;
+    }
+}
+
+.b-footer__contacts{
+    @include media($tablet){
+        float:right;
+    }
+}
+
+.b-footer__tel{
+    display:block;
+    line-height:1;
+    margin-bottom:5px;
+    color:$text-color;
+    font-weight:700;
+    font-size:20px;
+    white-space:nowrap;
+
+    &:hover,
+    &:active{
+        color:$primary;
+    }
+}
+
+.b-footer__mail{
+    display:block;
+    color:$text-color;
+    margin-bottom:10px;
+
+    &:hover,
+    &:active{
+        color:$primary;
+    }
+}
+
+.f-social{
+    margin:0;
+    padding:0;
+    font-size:0;
+}
+
+.f-social__item{
+    display:inline-block;
+    margin:0 0 10px 10px;
+    font-size:30px;
+
+    &:first-child{
+        margin-left:0;
+    }
+}
+
+.f-social__link{
+    display:block;
+    @include size(30px);
+    line-height:30px;
+    color:#6c6c6c;
+    text-align:center;
+
+    &:hover,
+    &:active{
+        color:$primary;
+    }
+}
+
+
+.f-logo{
+    @extend .f-social;
+
+    @include media($tablet){
+        text-align:right;
+    }
+}
+
+.f-logo__item{
+    @extend .f-social__item;
+    margin-left:15px;
+}
+
+.f-logo__link{
+    opacity:.7;
+    @include transition(opacity .3s);
+
+    &:hover,
+    &:active{
+        opacity:1;
+
+        .f-logo__img{
+            -webkit-filter: none;
+            filter:none;
+        }
+    }
+}
+
+.f-logo__img{
+    vertical-align:top;
+    max-height:20px;
+    @include grayscale-filter;
+
+    @include media($small){
+        max-height:none;
+    }
+}

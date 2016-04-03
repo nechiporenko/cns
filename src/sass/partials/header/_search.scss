@@ -1,0 +1,47 @@
+﻿@import "../../modules/_base.scss";
+/*Search Form*/
+.b-search{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:999;
+    background:#fff;
+    background:rgba(#fff, .85);
+}
+
+.b-search__wrapper{
+    display:table;
+    width:100%;
+    height:100%;
+    table-layout:fixed;
+}
+
+.b-search__inner{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.b-search__title{
+    display:block;
+    margin-bottom:30px;
+    font-family:$font-sans-alt;
+    font-weight:800;
+    color:$primary-alt;
+    line-height:1.1;
+    font-size:2rem;
+}
+
+.b-search__close{
+    border:0;
+    background:none;
+    position:absolute;
+    top:0; right:0;
+    color:$primary-alt;
+
+    &:active{
+        background:#fff;
+    }
+}

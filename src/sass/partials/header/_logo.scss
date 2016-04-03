@@ -1,0 +1,79 @@
+﻿@import "../../modules/_base.scss";
+/*Site Logo*/
+.b-logo{
+    float:left;
+    width:165px;
+    height:56px;
+    line-height:56px;
+    padding-left:54px;
+    text-decoration:none;
+    text-transform:uppercase;
+    position:relative;
+    font-family:$font-sans-alt;
+    font-weight:800;
+    color:$title-color;
+
+    @include media($small){
+        height:64px;
+        padding-left:59px;
+    }
+
+    @include media($tablet){
+        height:94px;
+        margin-right:20px;
+    }
+
+    @include media($large){
+        width:190px;
+        margin-right:0;
+    }
+}
+.b-logo__img{
+    display:block;
+    position:absolute;
+    top:0; left:0;
+    width:40px;
+    height:100%;
+
+    @include media($small){
+        width:45px;
+    }
+
+    svg{
+        width:100%;
+        height:auto;
+        @extend .vca;
+    }
+}
+
+.b-logo__title{
+    display:inline-block;
+    padding-top:2px;
+    line-height:1.2;
+    font-size:13px;
+    @extend .va;
+
+    @include media($small){
+        line-height:1.3;
+    }
+}
+
+/*Homepage logo*/
+
+@include media($tablet){
+    .b-header--hero{
+        .b-logo{
+            height:134px;
+            width:280px;
+            padding-left:105px;
+            margin-right:40px;
+        }
+        .b-logo__img{
+            width:80px;
+        }
+
+        .b-logo__title{
+            font-size:18px;
+        }
+    }
+}

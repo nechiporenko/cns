@@ -1,0 +1,130 @@
+﻿@import "../../modules/_base.scss";
+/*Video review section*/
+.b-review{
+    margin-bottom:0;
+    @extend .g-clearfix;
+}
+$review-gutter:30*(100%)/1170;
+
+.b-review__list,
+.b-review__tabs{
+    @extend .g-column;
+
+    @include media($tablet){
+        width:(100% - $review-gutter)/2;
+    }
+}
+
+.b-review__list{
+    margin-top:0;
+    padding:0;
+
+    @include media($large){
+        width:34.61%;
+    }
+}
+
+.b-review__tabs{
+    @include media($tablet){
+        margin-left:$review-gutter;
+    }
+
+    @include media($large){
+        width:(100 - 34.61 - $review-gutter);
+    }
+}
+
+.b-review__thumb{
+    max-width:630px;
+    margin:0 0 20px 0;
+    padding:0;
+    overflow:hidden;
+    @include transition(box-shadow .3s ease);
+
+   
+
+    &:hover,
+    &:active{
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+        .b-review__img{
+            opacity:.8;
+        }
+    }
+
+    &:active{
+        .b-review__icon{
+            @include transform(translateY(4px));
+        }
+    }
+}
+
+.b-review__videolink{
+    display:block;
+    position:relative;
+    
+     &:after{
+        content:'';
+        display:block;
+        padding-top:56.25%; /* 16:9 */
+    }
+}
+
+.b-review__img{
+    @extend .g-img-centered;
+    z-index:1;
+    @include backface-visibility(hidden);
+    @include transition(opacity .3s ease-in);
+}
+
+.b-review__icon{
+    display:block;
+    @include size(94px);
+    border-radius:50%;
+    background:$primary-alt1;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-47px;
+    margin-left:-47px;
+    font-size:36px;
+    z-index:2;
+    @include transition(transform .3s);
+
+    i{
+        @extend .vca;
+    }
+}
+
+.b-review__icon--small{
+     @include size(54px);
+     margin-top:-27px;
+     margin-left:-27px;
+     font-size:22px;
+}
+
+.b-review__item.current{
+    .b-review__link{
+        background:#eee;
+        cursor:default;
+    }
+}
+
+.b-review__link{
+    display:block;
+    font-size:16px;
+    color:$text-color;
+    font-weight:700;
+    padding:20px;
+    line-height:1.1;
+    @include transition(background .15s);
+
+    @include media($small){
+        padding:20px 30px;
+    }
+
+    &:hover,
+    &:active{
+        background:#eee;
+    }
+}

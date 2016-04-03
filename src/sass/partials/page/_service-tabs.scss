@@ -1,0 +1,68 @@
+﻿@import "../../modules/_base.scss";
+/*Services Tabs*/
+.b-service{
+    margin:0;
+    font-size:0;
+}
+.b-service__item{
+    display:block;
+    margin-bottom:10px;
+    font-size:18px;
+
+    @include media($small){
+        display:inline-block;
+        margin-bottom:30px;
+        width:50%;
+    }
+
+    @include media($tablet){
+        width:auto;
+        margin-left:20px;
+
+        &:first-child{
+            margin-left:0;
+        }
+    }
+
+    @include media($large){
+        margin-left:50px;
+    }
+
+
+    &.current{
+        .b-service__link{
+            color:$border-color;
+            cursor:default;
+            .b-service__img path{
+                fill:$border-color;
+            }
+        }
+    }
+}
+.b-service__link{
+    font-family:$font-sans-alt;
+    font-weight:600;
+    color:#3a3a3a;
+    @include transition(color .2s ease-in);
+
+    &:hover,
+    &:active{
+        color:$border-color;
+        .b-service__img path{
+            fill:$border-color;
+        }
+    }
+}
+
+.b-service__img{
+    @extend .b-part-menu__img;
+    display:inline-block;
+    margin:0 15px 0 0;
+    vertical-align:middle;
+    position:relative;
+}
+
+.b-service__img--large{
+    font-size:16px;
+}
+

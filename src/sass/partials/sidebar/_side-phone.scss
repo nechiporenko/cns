@@ -1,0 +1,50 @@
+﻿@import "../../modules/_base.scss";
+/*Side Phone number*/
+.b-phone{
+    margin:50px 0;
+}
+.b-phone__link{
+    display:block;
+    margin-bottom:15px;
+    white-space:nowrap;
+    font-weight:700;
+    color:#231f20;
+    line-height:1;
+
+    i{
+        margin-right:5px;
+        color:$border-color;
+        font-size:120%;
+    }
+
+    &:hover,
+    &:active{
+        .b-phone__num{
+            color:$primary;
+        }
+    }
+}
+
+.b-phone__num{
+    font-size:186%;
+    @include transition(color .15s);
+}
+
+.b-phone__content{
+    @extend .g-clearfix;
+    width:230px;
+    line-height:1.4;
+}
+
+.b-phone__icon{
+    float:left;
+    margin:7px 20px 0 25px;
+    @include size(54px);
+    line-height:54px;
+    text-align:center;
+    font-size:120%;
+    font-weight:700;
+    color:#fff;
+    background:$primary-alt1;
+    border-radius:50%;
+}

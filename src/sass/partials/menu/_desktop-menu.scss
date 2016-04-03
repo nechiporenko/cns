@@ -1,0 +1,153 @@
+﻿@import "../../modules/_base.scss";
+/* Desktop Menu */
+.b-menu{
+    display:none;
+
+    @include media($tablet){
+        display:block;
+    }
+}
+
+.b-menu__item{
+    i{
+        font-size:1.4rem;
+    }
+    i.right{
+        margin-left:5px;
+        font-size:1.2rem;
+    }
+
+    & > a{
+        color:#3a3a3a;
+        font-size:16px;
+        font-weight:700;
+        @include transition(color .3s ease-in);
+
+        &:hover,
+        &:active{
+            background:none;
+            color:$border-color;
+        }
+    }
+
+    &.active > a{
+        background:#fff;
+        color:$border-color;
+    }
+}
+.b-menu__item--large{//эти элементы меню покажем только на широком экране
+    display:none;
+
+    @include media($large){
+        display:block;
+    }
+}
+
+.b-submenu{}
+.b-submenu__item{}
+.b-submenu__item--large{//когда элементы верхнего меню будут видимы - скроем их в подменю
+    @include media($large){
+        display:none;
+    }
+}
+
+//кнопка callback
+.b-menu__callback{
+    height:38px;
+    line-height:38px;
+    padding:0 .6rem;
+    margin:0 0 5px 0;
+    font-size:17px;
+    text-transform:none;
+    background-color:$primary;
+
+    @include media($large){
+        margin-left:15px;
+    }
+}
+
+//правое меню
+.b-menu--right{
+    float:right;
+
+    .b-menu__item{
+        & > a{
+            padding:0 10px;
+            color:$border-color;
+            font-weight:400;
+
+            &:hover,
+            &:active{
+                color:#3a3a3a;
+            }
+        }
+    }
+}
+
+//user link
+.b-menu__userlink{
+    &:hover,
+    &:active{
+        .b-menu__user{
+            background:lighten($primary-alt, 15%);
+        }
+    }
+}
+.b-menu__user{
+    display:inline-block;
+    vertical-align:middle;
+    @include size(38px);
+    border-radius:50%;
+    background:$primary-alt;
+    text-align:center;
+    color:#fff;
+    @include transition(background .3s ease-in);
+
+    i{
+        height:38px !important;
+        line-height:38px !important;
+    }
+}
+
+
+/*Home page menu mod:*/
+.b-header--hero{
+    .b-menu__callback{
+        display:none;
+    }
+    @include media($tablet){
+        .b-menu__item{
+            & > a{
+                color:$primary;
+                &:hover,
+                &:active{
+                    color:$primary-alt;
+                }
+            }
+        }
+
+        .b-menu--right{
+            .b-menu__item{
+                & > a{
+                    color:#919090;
+
+                    &:hover,
+                    &:active{
+                        color:$primary-alt;
+                    }
+                }
+            }
+        }
+    }
+
+    @include media($large){
+        .b-menu__item--large{
+            display:none;
+        }
+
+        .b-submenu__item--large{
+            display:block;
+        }
+    }
+}
+

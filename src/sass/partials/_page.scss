@@ -1,0 +1,96 @@
+﻿@import "../modules/_base.scss";
+
+//@import "page/_breadcrumbs.scss";
+//@import "page/_slider.scss";
+//@import "page/_scroll-up.scss";
+
+
+@import "page/_hero-slider.scss";//главный слайдер 
+@import "page/_history.scss";//слайдер просмотренных страниц
+@import "page/_propositions.scss";//специальные предложения
+
+
+@import "page/_service-tabs.scss"; //вкладки с предложениями услуг
+@import "page/_service-list.scss";//список услуг
+@import "page/_info-blocks.scss";//
+@import "page/_video-review.scss";//вкладки видео-отзывов
+@import "page/_callback-block.scss";//форма обратной связи
+
+
+
+.b-page{
+    padding:30px 0;
+
+    hr {
+        margin:10px 0;
+        border-width: 0;
+        border-top: 1px solid #e0e0e0;
+    }
+}
+
+.b-page__section{
+    padding:45px 0;
+}
+
+.b-page__section--alt{
+    background:#f3f3f3;
+}
+
+.b-page__title,
+.b-page__subtitle{
+    display:block;
+    margin-top:0;
+    margin-bottom:35px;
+    font-family:$font-sans-alt;
+    font-weight:800;
+    color:$title-color;
+    line-height:1.1;
+}
+
+.b-page__title{
+    font-size:200%;
+}
+
+.b-page__subtitle{
+    font-size:(2100% / 15);
+    text-transform:uppercase;
+}
+
+.b-page__subtitle--alt{
+    margin-bottom:15px;
+    font-family:$font-sans;
+    text-transform:none;
+    font-weight:700;
+}
+
+//для ссылки "Больше новостей, и т.д."
+.b-more{
+    color:#6c6c6c;
+    font-size:18px;
+    white-space:nowrap;
+    @include transition(color .3s);
+
+    &:hover{
+        color:$primary;
+        .b-more__icon{
+            background:$primary;
+        }
+    }
+}
+
+.b-more__icon{
+    display:inline-block;
+    vertical-align:middle;
+    @include size(26px);
+    margin-left:5px;
+    line-height:28px;
+    text-align:center;
+    background:#c9d2d5;
+    border-radius:50%;
+    color:#fff;
+    font-size:14px;
+    @include transition(background .3s);
+}
+
+
+

@@ -1,0 +1,33 @@
+﻿@import "../../modules/_base.scss";
+/*Info blocks (3 column on desktop)*/
+.b-info{
+    @extend .g-column;
+    padding:20px;
+    margin-bottom:20px;
+    background:#fff;
+
+
+    @include media($tablet){
+        width:30.78%;
+        margin-bottom:0;
+        margin-left:3.83%;
+
+        &:first-child{
+            margin-left:0;
+        }
+    }
+
+    @include media($large){
+        padding:30px;
+    }
+}
+
+.b-info__title{
+    display:block;
+    margin:0 0 15px;
+    line-height:1.1;
+    font-family:$font-sans-alt;
+    font-weight:600;
+    color:$primary;
+    font-size:140%;
+}
