@@ -8,6 +8,8 @@
     }
 }
 
+
+
 .b-menu__item{
     i{
         font-size:1.4rem;
@@ -35,6 +37,8 @@
         color:$border-color;
     }
 }
+
+
 .b-menu__item--large{//эти элементы меню покажем только на широком экране
     display:none;
 
@@ -50,6 +54,8 @@
         display:none;
     }
 }
+
+
 
 //кнопка callback
 .b-menu__callback{
@@ -81,6 +87,11 @@
                 color:#3a3a3a;
             }
         }
+
+        //search link
+        .icon-search{
+            padding-top:2px;
+        }
     }
 }
 
@@ -93,6 +104,9 @@
         }
     }
 }
+
+
+
 .b-menu__user{
     display:inline-block;
     vertical-align:middle;
@@ -122,6 +136,14 @@
                 &:hover,
                 &:active{
                     color:$primary-alt;
+                }
+            }
+        }
+
+        .b-menu--left{
+            .b-menu__item{
+                & > a{
+                    font-size:20px;
                 }
             }
         }

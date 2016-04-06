@@ -47,12 +47,14 @@
 
 .b-service-list__title{
     display:block;
-    font-size:146%;
+    font-size:(2100% / 15);
     color:$primary;
     line-height:1.1;
 
 
     i{
+        display:inline-block;
+        vertical-align:bottom;
         color:$border-color;
         @include transition(opacity .3s ease);
         opacity:0;

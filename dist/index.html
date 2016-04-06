@@ -53,7 +53,7 @@
                     <!--/Mobile buttons end-->
 
                     <!--Left desktop menu start-->
-                    <ul class="b-menu">
+                    <ul class="b-menu b-menu--left">
                         <li class="b-menu__item">
                             <a class="dropdown-button" href="#!" data-activates="services" data-constrainwidth="false">
                                 Все услуги
@@ -365,7 +365,7 @@
                 <div class="row">
                     <div class="col s12 m6 l3">
                         <label class="b-callback__label">Оставьте номер для связи</label>
-                        <input type="text" class="b-callback__input" />
+                        <input type="text" class="b-callback__input js-input-phone" />
                     </div>
                     <div class="col s12 m6 l3">
                         <label class="b-callback__label">&nbsp;</label>
@@ -639,14 +639,14 @@
     </main>
 
     <!--modal window callback start-->
-    <div id="callback" class="modal modal-fixed-footer">
+    <div id="callback" class="modal modal-fixed-footer b-modal-callback">
         <form class="modal-content">
             <h5>Заказать обратный звонок</h5>
             <div class="input-field">
-                <input id="phone" type="text" class="validate">
-                <label for="phone">Номер телефона</label>
+                <input id="phone" type="text" class="validate b-modal-callback__input js-input-phone">
+                <label for="phone" class="b-modal-callback__label">Номер телефона</label>
             </div>
-            <p>Укажите свой номер телефона, и мы перезвоним в течение 15 минут</p>
+            <p>Укажите свой номер телефона, и мы перезвоним в течение 15 минут.</p>
             <p>&nbsp;</p>
             <button type="submit" class="btn">Отправить</button>
         </form>
@@ -656,7 +656,7 @@
             </a>
         </div>
     </div>
-    <!--modal window callback start-->
+    <!--/modal window callback end-->
 
     <!--modal window video start-->
     <div id="videomodal" class="modal">
@@ -666,7 +666,7 @@
             </div>
         </div>
     </div>
-    <!--modal window callback start-->
+    <!--/modal window video end-->
 
     <footer class="b-footer">
         <div class="container">
