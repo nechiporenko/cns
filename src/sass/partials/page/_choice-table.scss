@@ -1,0 +1,66 @@
+﻿@import "../../modules/_base.scss";
+/*Choice table*/
+.b-ch-table{}
+
+.b-choice-table__company{
+    margin:0;
+    padding:0;
+
+    font-size:(1300%/15);
+
+    a{
+        display:block;
+        color:#6c6c6c;
+        text-decoration:underline;
+
+        &:hover,
+        &:active{
+            color:$primary;
+        }
+    }
+}
+
+
+.b-ch-table__logo{
+    max-width:80px;
+    height:auto;
+    margin-bottom:10px;
+}
+
+.b-ch-table__choice{
+    display:block;
+    font-weight:600;
+}
+
+.b-ch-table__choice-1{
+    color:$primary;
+}
+.b-ch-table__choice-2{
+    color:$primary-alt1;
+}
+
+.b-ch-table__price{
+    display:block;
+    margin:10px 0;
+    font-size:(2100%/15);
+    font-weight:600;
+}
+
+.b-ch-table__price-1{
+    color:$primary;
+}
+.b-ch-table__price-2{
+    color:$primary-alt1;
+}
+
+.b-ch-table__btn{
+    background:$primary-alt1;
+
+    &:hover{
+        background:$primary;
+    }
+
+    &:focus{
+        background:$primary-alt1;
+    }
+}

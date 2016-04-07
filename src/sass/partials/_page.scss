@@ -17,6 +17,9 @@
 @import "page/_callback-block.scss";//форма обратной связи
 
 
+@import "page/_choice-table.scss";//таблица с вариантами предложений страховых
+
+
 
 .b-page{
     padding:30px 0;
@@ -92,5 +95,40 @@
     @include transition(background .3s);
 }
 
+
+//Текст-превью
+.b-big-text{
+    margin-top:0;
+    font-size:(1800%/15);
+    color:#6c6c6c;
+}
+
+//Список вариантов
+.g-action-list{
+    margin:0 0 20px;
+    li{
+        display:inline-block;
+        margin:0 50px 15px 0;
+        font-size:(1800%/15);
+        font-weight:600;
+
+        &:last-child{
+            margin-right:0;
+        }
+    }
+
+    i{
+        vertical-align:middle;
+    }
+
+    a{
+        color:$primary;
+
+        &:hover,
+        &:active{
+            text-decoration:underline;
+        }
+    }
+}
 
 

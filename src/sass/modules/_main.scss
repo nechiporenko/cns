@@ -77,3 +77,36 @@ img.g-table-logo{
 }
 
 
+//цитата
+blockquote{
+    font-size:(1600%/15);
+    color:#6c6c6c;
+    font-style:italic;
+    border-color:$primary-alt1;
+}
+
+
+//обертка для таблицы (если не подходит вариант с responsive-table фреймворка)
+.g-table-wrap{
+    min-height: 1px;
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 991px) {
+
+    .g-table-wrap{
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px dashed #ddd;
+
+        table{
+            margin-bottom:0;
+
+            th, td{
+                white-space: nowrap;
+            }
+        }
+    }
+}
