@@ -64,3 +64,21 @@
         background:$primary-alt1;
     }
 }
+
+//форма в сайдбаре, рядом с таблицей
+.b-ch-table-form{
+    padding:12px 1.5rem 15px 1.5rem;
+    background:#f5f5f5;
+    border-bottom:1px solid rgb(208, 208, 208);
+
+    @include media($tablet){
+        margin-left:-1.5rem;
+    }
+}
+
+.b-ch-table-form__title{
+    display:block;
+    font-weight:600;
+    color:$title-color;
+    font-size:(2100%/15);
+}

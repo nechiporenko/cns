@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inner2 Page</title>
+    <meta name="description" content="Page Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="js/vendor/modernizr.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="b-header navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!--Logo start-->
+                    <a href="index.html" class="b-logo">
+                        <span class="b-logo__img">
+                            <svg height="100%" width="100%" version="1.1" y="0" x="0" viewBox="0 0 78.708664 98.000002">
+                                <g transform="matrix(1.5433 0 0 1.5433 -95.531 -61.887)">
+                                    <g>
+                                        <path fill="#f68b1f" d="m87.4 40.1c-14.1 0-25.5 11.4-25.5 25.5 0 13.7 23.2 36.5 24.1 37.4 0.4 0.4 0.9 0.6 1.4 0.6s1-0.2 1.4-0.6c1-1 24.1-23.8 24.1-37.4 0-14-11.4-25.5-25.5-25.5z" />
+                                        <path fill="#fff" d="m89.2 66.5h12.6c0-7.9-6.4-14.3-14.3-14.3s-14.3 6.4-14.3 14.3h13.2v8.7 0.1 0.1c0 1-0.8 1.8-1.8 1.8s-1.8-0.8-1.8-1.8c0-0.8-0.6-1.4-1.4-1.4s-1.4 0.6-1.4 1.4c0 2.6 2.1 4.6 4.6 4.6 2.6 0 4.6-2.1 4.6-4.6v-0.1-0.1-8.7z" />
+		                            </g>
+	                            </g>
+                            </svg>
+                        </span>
+                        <span class="b-logo__title">Центр народного страхования</span>
+                    </a>
+                    <!--/Logo end-->
+
+                    <!--Mobile buttons start-->
+                    <button type="button" data-activates="mobile-menu" class="button-collapse b-header__btn">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <button type="button" class="b-header__btn modal-trigger" data-target="callback">
+                        <i class="material-icons">phone</i>
+                    </button>
+                    <button type="button" class="b-header__btn" data-searchform>
+                        <i class="material-icons">search</i>
+                    </button>
+                    <!--/Mobile buttons end-->
+
+                    <!--Left desktop menu start-->
+                    <ul class="b-menu b-menu--left">
+                        <li class="b-menu__item active">
+                            <a class="dropdown-button" href="#!" data-activates="services" data-constrainwidth="false">
+                                Все услуги
+                                <span class="icon-triangle-down"></span>
+                            </a>
+                            <ul id="services" class="dropdown-content b-submenu">
+                                <li class="b-submenu__item">
+                                    <a href="#!">Автомобили</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Здоровье</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Недвижимость</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Ответственность</a>
+                                </li>
+                                <li class="divider b-submenu__item b-submenu__item--large"></li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#!">Для бизнеса</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#!">О нас</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#!">Контакты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Отзывы</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Для бизнеса</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">О нас</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Контакты</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <button type="button" class="waves-effect waves-light btn b-menu__callback modal-trigger" data-target="callback">Заказать звонок</button>
+                        </li>
+                    </ul>
+                    <!--/Left desktop menu end-->
+
+                    <!--Right desktop menu start-->
+                    <ul class="b-menu b-menu--right">
+                        <li class="b-menu__item">
+                            <a href="#" data-searchform>
+                                <i class="icon-search"></i>
+                            </a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#" class="b-menu__userlink">
+                               <span class="b-menu__user">
+                                   <i class="icon-user"></i>
+                               </span>
+                            </a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#!" class="dropdown-button" data-activates="lang" data-constrainwidth="false" data-alignment="right">
+                                рус
+                                <span class="icon-triangle-down"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--/Right desktop menu end-->
+                </div>
+            </div>
+            
+            <!--Lang menu start-->
+            <ul id="lang" class="dropdown-content">
+                <li><a href="#" hreflang="ru">Русский</a></li>
+                <li><a href="#" hreflang="uk">Украинский</a></li>
+                <li><a href="#" hreflang="en">Английский</a></li>
+            </ul>
+            <!--/Lang menu end-->
+
+            <!--Mobile menu start-->
+            <ul class="side-nav" id="mobile-menu">
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Все услуги<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!">Автомобили</a></li>
+                                    <li><a href="#!">Здоровье</a></li>
+                                    <li><a href="#!">Недвижимость</a></li>
+                                    <li><a href="#!">Ответственность    </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#!">Отзывы</a></li>
+                <li><a href="#!">Для бизнеса</a></li>
+                <li><a href="#!">О нас</a></li>
+                <li><a href="#!">Контакты</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Войти...</a></li>
+            </ul>
+            <!--/Mobile menu end-->
+        </nav>
+
+        <!--Search form start-->
+        <div class="b-search">
+            <div class="b-search__wrapper">
+                <div class="b-search__inner">
+                    <div class="container">
+                        <span class="b-search__title">Введите слово и нажмите Enter</span>
+                        <form>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">search</i>
+                                    <input id="search" type="text">
+                                    <label for="search">Поиск по сайту...</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="button" class="b-search__close">
+                        <i class="material-icons large">close</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--/Search form end-->
+    </header>
+   
+    <main class="b-page">
+        <!--section main content start-->
+        <section class="container">
+
+            <h1 class="b-page__title">Страхование ОСАГО <small>(Автогражданка)</small></h1>
+
+            <ul class="b-crumb">
+                <li class="b-crumb__item">
+                    <a href="#" class="b-crumb__link">ОСАГО</a>
+                </li>
+                <li class="b-crumb__item">
+                    <a href="#" class="b-crumb__link">Выбор тарифа</a>
+                </li>
+                <li class="b-crumb__item active">
+                    <a href="#" class="b-crumb__link">Оформление</a>
+                </li>
+                <li class="b-crumb__item">
+                    <span class="b-crumb__link">Готово</span>
+                </li>
+            </ul>
+
+            <div class="row">
+                <div class="col s12 l9">
+                    <div class="g-table-wrap" data-match-height>
+                        <table class="bordered b-ch-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="hide-on-small-only">Ваше авто</th>
+                                    <th colspan="2">Страхование</th>
+                                    <th class="center">Стоимость</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="hide-on-small-only">
+                                        <i class="icon-car g-brand-color"></i>
+                                    </td>
+                                    <td class="hide-on-small-only">
+                                        Легковая, Huyndai Accent 2011, 1.6, механика, 100 000 км<br />
+                                        Зарегистирована: Киев<br />
+                                        Водительский стаж: 15 лет,<br />
+                                        возраст водителя: 42 года
+                                    </td>
+                                    <td>
+                                        <img src="img/company/logo01.png" class="b-ch-table__logo" alt="Logo" />
+                                    </td>
+                                    <td>
+                                        ОСАГО<br />
+                                        12 месяцев
+                                    </td>
+                                    <td class="center">
+                                        <span class="b-ch-table__price">1 080 грн</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="hide-on-small-only">
+                                        <span class="g-brand-color"><i class="material-icons">subject</i></span>
+                                    </td>
+                                    <td colspan="4">
+                                        <a href="#!"> Ознакомиться с шаблоном договора</a><br />
+                                        (потребуется действующий номер телефона)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <aside class="col s12 l3">
+                    <form class="b-ch-table-form" data-match-height>
+                        <span class="b-page__subtitle">Оформить в 1 клик</span>
+                        <div class="input-field">
+                            <input id="phone1" type="text" class="js-input-phone" placeholder="Ваш номер телефона" required />
+                        </div>
+                        <div class="">
+                            <button type="submit" class="btn waves-effect waves-light">Подтвердить заказ</button>
+                        </div>
+                    </form>
+                </aside>
+            </div><!--/row-->
+        </section>
+        <!--/section main content end-->
+
+        <section class="b-page__section">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l9">
+                        <div class="row">
+                            <div class="col s12 m6 l6">
+                                <h2 class="b-page__subtitle">
+                                    <span class="g-brand-color"><i class="icon-user"></i></span>&emsp;Владелец авто
+                                </h2>
+                            </div>
+                            <div class="col s12 m6 l6">
+                                <a href="#">Войти в аккаунт...</a>
+                                <br />
+                                Ускорьте оформление: <a href="#">загрузите документы</a>
+                            </div>
+                        </div><!--/row-->
+                        <div class="row">
+                            <div class="col s12 m6 l4 input-field">
+                                <input type="text" id="text1" class="validate" required>
+                                <label for="text1">Фамилия</label>
+                            </div>
+                            <div class="col s12 m6 l4 input-field">
+                                <input type="text" id="text2" class="validate" required>
+                                <label for="text2">Имя</label>
+                            </div>
+                            <div class="col s12 m6 l4 input-field">
+                                <input type="text" id="text3" class="validate" required>
+                                <label for="text3">Отчество</label>
+                            </div>
+                        </div><!--/row-->
+                        <div class="row">
+                            <div class="col s12 m12 l8 input-field">
+                                <input type="text" id="text4" class="validate" required>
+                                <label for="text4">ИНН</label>
+                            </div>
+                        </div><!--/row-->
+                        <div class="row">
+                            <div class="col s12 m4 l4 input-field">
+                                <select>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <label>День рождения</label>
+                            </div>
+                            <div class="col s12 m4 l4 input-field">
+                                <select>
+                                    <option value="1">Январь</option>
+                                    <option value="2">Февраль</option>
+                                    <option value="3">Март</option>
+                                </select>
+                                <label>Месяц рождения</label>
+                            </div>
+                            <div class="col s12 m4 l4 input-field">
+                                <input type="text" id="text5" class="validate" required>
+                                <label for="text5">Год рождения</label>
+                            </div>
+                        </div><!--/row-->
+                    </div><!--/left column-->
+
+                    <aside class="col s12 l3 b-service-info">
+                        <span class="b-service-info__title">
+                            <i class="icon-dollar"></i>
+                            Способствуем выплатам
+                        </span>
+                        <p>
+                            по купленной страховке при наступлении страхового случая
+                        </p>
+
+                        <div class="b-phone">
+                            <a href="tel:+0800758758" class="b-phone__link">
+                                <i class="icon-phone"></i>
+                                <span class="b-phone__num">0 800-758-758</span>
+                            </a>
+                            <div class="b-phone__content">
+                                <span class="b-phone__icon">24/7</span>
+                                компетентно<br />
+                                и бесплатно<br />
+                                по Украине
+                            </div>
+                        </div>
+                    </aside><!--/rigth column-->
+                </div><!--/row-->
+            </div><!--/container-->
+        </section>
+        
+
+
+        
+    </main>
+
+    <!--modal window callback start-->
+    <div id="callback" class="modal modal-fixed-footer b-modal-callback">
+        <form class="modal-content">
+            <h5>Заказать обратный звонок</h5>
+            <div class="input-field">
+                <input id="phone" type="text" class="validate b-modal-callback__input js-input-phone">
+                <label for="phone" class="b-modal-callback__label">Номер телефона</label>
+            </div>
+            <p>Укажите свой номер телефона, и мы перезвоним в течение 15 минут.</p>
+            <p>&nbsp;</p>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close btn-flat ">
+                <i class="material-icons">close</i>
+            </a>
+        </div>
+    </div>
+    <!--/modal window callback end-->
+
+    <!--modal window video start-->
+    <div id="videomodal" class="modal">
+        <div class="modal-content">
+            <div class="video-container">
+                <iframe width="560" height="315" src="img/review/review01.jpg"></iframe>
+            </div>
+        </div>
+    </div>
+    <!--/modal window video end-->
+
+    <footer class="b-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l5">
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <span class="b-footer__title">Продукты</span>
+                            <ul class="f-menu">
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Для бизнеса</a>
+                                </li>
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Страховые компании</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <span class="b-footer__title">О компании</span>
+                            <ul class="f-menu">
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Контакты</a>
+                                </li>
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Отзывы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/row-->
+                </div>
+                <div class="col s12 m12 l7">
+                    <div class="row">
+                        <div class="col s12 m6 l5">
+                            <div class="b-footer__contacts">
+                                <a href="tel:0800758758" class="b-footer__tel">0 800 758 758</a>
+                                <a href="mailto:info@narodna.ua" class="b-footer__mail">info@narodna.ua</a>
+
+                                <ul class="f-social">
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-vk"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l6 offset-l1">
+                            <ul class="f-logo">
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-visa.png" class="f-logo__img" alt="Visa" />
+                                    </a>
+                                </li>
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-master.png" class="f-logo__img" alt="Master Card" />
+                                    </a>
+                                </li>
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-privat.png" class="f-logo__img" alt="Privatbank" />
+                                    </a>
+                                </li>
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-24.png" class="f-logo__img" alt="Privat24" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/row-->
+                </div>
+            </div><!--/row-->
+        </div><!--/container-->
+    </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
