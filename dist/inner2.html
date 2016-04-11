@@ -239,7 +239,7 @@
                                         12 месяцев
                                     </td>
                                     <td class="center">
-                                        <span class="b-ch-table__price">1 080 грн</span>
+                                        <span class="b-ch-table__price"><span class="g-brand-color">1 080 грн</span></span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -247,7 +247,7 @@
                                         <span class="g-brand-color"><i class="material-icons">subject</i></span>
                                     </td>
                                     <td colspan="4">
-                                        <a href="#!"> Ознакомиться с шаблоном договора</a><br />
+                                        <a href="#!">Ознакомиться с шаблоном договора</a><br />
                                         (потребуется действующий номер телефона)
                                     </td>
                                 </tr>
@@ -257,12 +257,12 @@
                 </div>
 
                 <aside class="col s12 l3">
-                    <form class="b-ch-table-form" data-match-height>
+                    <form class="b-ch-table-form hoverable" data-match-height>
                         <span class="b-page__subtitle">Оформить в 1 клик</span>
                         <div class="input-field">
                             <input id="phone1" type="text" class="js-input-phone" placeholder="Ваш номер телефона" required />
                         </div>
-                        <div class="">
+                        <div class="right-align">
                             <button type="submit" class="btn waves-effect waves-light">Подтвердить заказ</button>
                         </div>
                     </form>
@@ -278,11 +278,11 @@
                         <div class="row">
                             <div class="col s12 m6 l6">
                                 <h2 class="b-page__subtitle">
-                                    <span class="g-brand-color"><i class="icon-user"></i></span>&emsp;Владелец авто
+                                    <span class="g-brand-color"><i class="material-icons">account_circle</i></span>&nbsp;Владелец авто
                                 </h2>
                             </div>
                             <div class="col s12 m6 l6">
-                                <a href="#">Войти в аккаунт...</a>
+                                <a href="#">Войти в аккаунт&emsp;<i class="icon-arrow-right"></i></a>
                                 <br />
                                 Ускорьте оформление: <a href="#">загрузите документы</a>
                             </div>
@@ -329,9 +329,82 @@
                                 <label for="text5">Год рождения</label>
                             </div>
                         </div><!--/row-->
+                        
+                        <h3 class="b-page__subtitle b-page__subtitle--alt">Паспорт:</h3>
+                        <div class="row">
+                            <div class="col s12 m6 l2 input-field">
+                                <input type="text" id="text6" class="validate" required>
+                                <label for="text6">Серия</label>
+                            </div>
+                            <div class="col s12 m6 l3 input-field">
+                                <input type="text" id="text7" class="validate" required>
+                                <label for="text7">Номер</label>
+                            </div>
+                            <div class="col s12 m6 l5 input-field">
+                                <input type="text" id="text8" class="validate" required>
+                                <label for="text8">Кем выдан</label>
+                            </div>
+                            <div class="col s12 m6 l2 input-field">
+                                <input type="text" id="text9" class="validate" required>
+                                <label for="text9">Когда выдан</label>
+                            </div>
+                        </div><!--/row-->
+
+                        <h3 class="b-page__subtitle b-page__subtitle--alt">Транспортное средство:</h3>
+                        <div class="row">
+                            <div class="col s12 m6 l4 input-field">
+                                <input type="text" id="text10" class="validate" required>
+                                <label for="text10">Гос.номер</label>
+                            </div>
+                            <div class="col s12 m6 l6 input-field">
+                                <input type="text" id="text11" class="validate" required>
+                                <label for="text11">VIN код</label>
+                            </div>
+                        </div><!--/row-->
+                        <div class="row">
+                            <div class="col s12">
+                                <input type="checkbox" id="test12" />
+                                <label for="test12">За последние 2 года у меня не было страховых случаев</label>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div><!--/row-->
+                        
+                        <h3 class="b-page__subtitle"><span class="g-brand-color"><i class="material-icons">room</i></span>&nbsp;Доставка полиса</h3>
+                        <div class="row">
+                            <div class="col s6 m4 l3">
+                                <input class="with-gap" name="group1" type="radio" id="test13" checked />
+                                <label for="test13">УкрПочтой</label>
+                            </div>
+                            <div class="col s6 m4 l3">
+                                <input class="with-gap" name="group1" type="radio" id="test14" />
+                                <label for="test14">Новой Почтой</label>
+                            </div>
+                            <div class="col s6 m4 l3">
+                                <input class="with-gap" name="group1" type="radio" id="test014" />
+                                <label for="test014">Курьером</label>
+                            </div>
+                        </div><!--/row-->
+                        <div class="row">
+                            <div class="col s12 m6 l4 input-field">
+                                <input type="text" id="text15" class="validate" required>
+                                <label for="text15">Город</label>
+                            </div>
+                            <div class="col s12 m6 l4 input-field">
+                                <input type="text" id="text16" class="validate" required>
+                                <label for="text16">Улица</label>
+                            </div>
+                            <div class="col s12 m4 l2 input-field">
+                                <input type="text" id="text17" class="validate" required>
+                                <label for="text17">Дом</label>
+                            </div>
+                            <div class="col s12 m4 l2 input-field">
+                                <input type="text" id="text18" class="validate" required>
+                                <label for="text18">Квартира</label>
+                            </div>
+                        </div><!--/row-->
                     </div><!--/left column-->
 
-                    <aside class="col s12 l3 b-service-info">
+                    <aside class="col s12 l3 b-service-info hide-on-med-and-down">
                         <span class="b-service-info__title">
                             <i class="icon-dollar"></i>
                             Способствуем выплатам
@@ -352,14 +425,129 @@
                                 по Украине
                             </div>
                         </div>
+
+                        <span class="b-service-info__title">
+                            <i class="material-icons">play_arrow</i>
+                            Как это работает
+                        </span>
+
+                        <ol>
+                            <li>Показываем актуальные тарифы страховых компаний</li>
+                            <li>Подбираем самый подходящий</li>
+                            <li>Оформляем страховку онлайн</li>
+                            <li>Оплачивайте онлайн удобным способом</li>
+                            <li>Доставляем полис</li>
+                        </ol>
                     </aside><!--/rigth column-->
                 </div><!--/row-->
             </div><!--/container-->
         </section>
         
+        <section class="b-page__section b-page__section--alt">
+            <div class="container">
+                <h4 class="b-page__subtitle">3 из 5 автовладельцев КАСКО для полной безопасности также покупают:</h4>
+                <div class="row">
+                    <div class="col s12 m8 l10">
+                        <p>
+                            <input type="checkbox" id="test19" />
+                            <label for="test19"><b>Страхование добровольной гражданской ответственности</b></label>
+                        </p>
+                        <p>
+                            Выплата пострадавшему в ДТП проводится по полису ОСАГО виновника ДТП. А будет полис ДГО - искать дополнительные финансовые средства!<br />
+                            Выплату пострадавшей стороне свыше 50 тыс. проведет страховая компания.
+                        </p>
+                        <div class="right-align"><a href="#">Показать детали страхования</a></div>
+                    </div>
+                    <div class="col s12 m4 l2 right-align">
+                        <span class="b-ch-table__price"><span class="g-brand-color">200 грн</span></span>
+                    </div>
+                </div><!--/row-->
+                <div class="row">
+                    <div class="col s12 m8 l10">
+                        <p>
+                            <input type="checkbox" id="test20" />
+                            <label for="test20"><b>Страхование от несчастного случая</b></label>
+                        </p>
+                        <p>
+                            Гарантирует Вам и Вашим близким компенсацию денежных расходов, связанных с травмой, потерей дееспособности.<br />
+                            Страхование на 50 000 грн.
+                        </p>
+                        <div class="right-align"><a href="#">Показать детали страхования</a></div>
+                        <div class="row">
+                            <div class="col s12 m6 l4 input-field">
+                                <select>
+                                    <option value="1">100 000 грн</option>
+                                    <option value="2">200 000 грн</option>
+                                    <option value="3">500 000 грн</option>
+                                </select>
+                                <label>Вы застрахованы на:</label>
+                            </div>
+                            <div class="col s12 m6 l4 input-field">
+                                <select>
+                                    <option value="1">12 месяцев</option>
+                                    <option value="2">24 месяца</option>
+                                    <option value="3">36 месяцев</option>
+                                </select>
+                                <label>Срок:</label>
+                            </div>
+                        </div><!--/row-->
+                    </div>
+                    <div class="col s12 m4 l2 right-align">
+                        <span class="b-ch-table__price"><span class="g-brand-color">180 грн</span></span>
+                    </div>
+                </div><!--/row-->
+            </div>
+        </section>
 
+        <section class="b-page__section">
+            <div class="container">
+                <h4 class="b-page__subtitle"><span class="g-brand-color"><i class="material-icons">call</i></span>&nbsp;Контакты для связи</h4>
+                <div class="row">
+                    <div class="col s12 m6 l4 input-field">
+                        <input type="email" id="text21" class="validate" required>
+                        <label for="text21">Эл.почта</label>
+                    </div>
+                    <div class="col s12 m6 l4 input-field">
+                        <input type="text" id="text22" class="js-input-phone"  required>
+                        <label for="text22">Телефон</label>
+                    </div>
+                </div><!--/row-->
+                <div class="row">
+                    <div class="input-field col s12 m12 l8">
+                        <i class="material-icons prefix">chat_bubble_outline</i>
+                        <textarea id="text23" class="materialize-textarea"></textarea>
+                        <label for="text23">Комментарий к заказу</label>
+                    </div>
+                </div><!--/row-->
+                <p>
+                    <input class="with-gap" name="group2" type="radio" id="test24" checked />
+                    <label for="test24">Осмотр автомобиля готов(-а) провести по скайпу</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="group2" type="radio" id="test25" />
+                    <label for="test25">Осмотр автомобиля готов(-а) провести нашему специалисту</label>
+                </p>
+            </div>
+        </section>
 
-        
+        <section class="b-page__section">
+            <div class="container">
+                <h4 class="b-page__subtitle"><span class="g-brand-color"><i class="material-icons">credit_card</i></span> Оплата</h4>
+                <p>
+                    <input class="with-gap" name="group3" type="radio" id="test26" checked />
+                    <label for="test26">Наличными при получении</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="group3" type="radio" id="test27" />
+                    <label for="test27">Банковской картой</label>
+                </p>
+                <p>&nbsp;</p>
+                <span class="b-page__subtitle">
+                    Всего к оплате: <span class="g-brand-color">45 000 грн</span>
+                </span>
+                <button type="button" class="btn btn-large waves-effect waves-light">Оформить »</button>
+            </div>
+        </section>
     </main>
 
     <!--modal window callback start-->
@@ -382,15 +570,6 @@
     </div>
     <!--/modal window callback end-->
 
-    <!--modal window video start-->
-    <div id="videomodal" class="modal">
-        <div class="modal-content">
-            <div class="video-container">
-                <iframe width="560" height="315" src="img/review/review01.jpg"></iframe>
-            </div>
-        </div>
-    </div>
-    <!--/modal window video end-->
 
     <footer class="b-footer">
         <div class="container">

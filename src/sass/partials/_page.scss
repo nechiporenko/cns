@@ -57,6 +57,11 @@
 .b-page__subtitle{
     font-size:(2100% / 15);
     text-transform:uppercase;
+
+    i{
+        display:inline-block;
+        vertical-align:top;
+    }
 }
 
 .b-page__subtitle--alt{
