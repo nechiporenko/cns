@@ -133,3 +133,21 @@ $review-gutter:30*(100%)/1170;
 .video-container iframe{
     border:0;
 }
+
+
+.b-review__list--alt{//другой цвет
+    .b-review__link{
+
+        &:hover,
+        &:active{
+            color:$primary-alt1;
+        }
+    }
+
+    .b-review__item.current{
+        .b-review__link{
+            background:$primary-alt1;
+            color:#fff;
+        }
+    }
+}

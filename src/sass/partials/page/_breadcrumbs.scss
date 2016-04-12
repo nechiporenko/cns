@@ -28,7 +28,7 @@
     }
 
     &.active{
-        a.b-crumb__link{
+        .b-crumb__link{
             color:$primary;
             text-decoration:underline;
             cursor:default;

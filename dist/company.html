@@ -1,0 +1,580 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inner Page</title>
+    <meta name="description" content="Page Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="js/vendor/modernizr.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="b-header navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!--Logo start-->
+                    <a href="index.html" class="b-logo">
+                        <span class="b-logo__img">
+                            <svg height="100%" width="100%" version="1.1" y="0" x="0" viewBox="0 0 78.708664 98.000002">
+                                <g transform="matrix(1.5433 0 0 1.5433 -95.531 -61.887)">
+                                    <g>
+                                        <path fill="#f68b1f" d="m87.4 40.1c-14.1 0-25.5 11.4-25.5 25.5 0 13.7 23.2 36.5 24.1 37.4 0.4 0.4 0.9 0.6 1.4 0.6s1-0.2 1.4-0.6c1-1 24.1-23.8 24.1-37.4 0-14-11.4-25.5-25.5-25.5z" />
+                                        <path fill="#fff" d="m89.2 66.5h12.6c0-7.9-6.4-14.3-14.3-14.3s-14.3 6.4-14.3 14.3h13.2v8.7 0.1 0.1c0 1-0.8 1.8-1.8 1.8s-1.8-0.8-1.8-1.8c0-0.8-0.6-1.4-1.4-1.4s-1.4 0.6-1.4 1.4c0 2.6 2.1 4.6 4.6 4.6 2.6 0 4.6-2.1 4.6-4.6v-0.1-0.1-8.7z" />
+		                            </g>
+	                            </g>
+                            </svg>
+                        </span>
+                        <span class="b-logo__title">Центр народного страхования</span>
+                    </a>
+                    <!--/Logo end-->
+
+                    <!--Mobile buttons start-->
+                    <button type="button" data-activates="mobile-menu" class="button-collapse b-header__btn">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <button type="button" class="b-header__btn modal-trigger" data-target="callback">
+                        <i class="material-icons">phone</i>
+                    </button>
+                    <button type="button" class="b-header__btn" data-searchform>
+                        <i class="material-icons">search</i>
+                    </button>
+                    <!--/Mobile buttons end-->
+
+                    <!--Left desktop menu start-->
+                    <ul class="b-menu b-menu--left">
+                        <li class="b-menu__item active">
+                            <a class="dropdown-button" href="#!" data-activates="services" data-constrainwidth="false">
+                                Все услуги
+                                <span class="icon-triangle-down"></span>
+                            </a>
+                            <ul id="services" class="dropdown-content b-submenu">
+                                <li class="b-submenu__item">
+                                    <a href="#!">Автомобили</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Здоровье</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Недвижимость</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Ответственность</a>
+                                </li>
+                                <li class="divider b-submenu__item b-submenu__item--large"></li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#!">Для бизнеса</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#!">О нас</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#!">Контакты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Отзывы</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Для бизнеса</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">О нас</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Контакты</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <button type="button" class="waves-effect waves-light btn b-menu__callback modal-trigger" data-target="callback">Заказать звонок</button>
+                        </li>
+                    </ul>
+                    <!--/Left desktop menu end-->
+
+                    <!--Right desktop menu start-->
+                    <ul class="b-menu b-menu--right">
+                        <li class="b-menu__item">
+                            <a href="#" data-searchform>
+                                <i class="icon-search"></i>
+                            </a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#" class="b-menu__userlink">
+                               <span class="b-menu__user">
+                                   <i class="icon-user"></i>
+                               </span>
+                            </a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#!" class="dropdown-button" data-activates="lang" data-constrainwidth="false" data-alignment="right">
+                                рус
+                                <span class="icon-triangle-down"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--/Right desktop menu end-->
+                </div>
+            </div>
+            
+            <!--Lang menu start-->
+            <ul id="lang" class="dropdown-content">
+                <li><a href="#" hreflang="ru">Русский</a></li>
+                <li><a href="#" hreflang="uk">Украинский</a></li>
+                <li><a href="#" hreflang="en">Английский</a></li>
+            </ul>
+            <!--/Lang menu end-->
+
+            <!--Mobile menu start-->
+            <ul class="side-nav" id="mobile-menu">
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Все услуги<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!">Автомобили</a></li>
+                                    <li><a href="#!">Здоровье</a></li>
+                                    <li><a href="#!">Недвижимость</a></li>
+                                    <li><a href="#!">Ответственность    </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#!">Отзывы</a></li>
+                <li><a href="#!">Для бизнеса</a></li>
+                <li><a href="#!">О нас</a></li>
+                <li><a href="#!">Контакты</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Войти...</a></li>
+            </ul>
+            <!--/Mobile menu end-->
+        </nav>
+
+        <!--Search form start-->
+        <div class="b-search">
+            <div class="b-search__wrapper">
+                <div class="b-search__inner">
+                    <div class="container">
+                        <span class="b-search__title">Введите слово и нажмите Enter</span>
+                        <form>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">search</i>
+                                    <input id="search" type="text">
+                                    <label for="search">Поиск по сайту...</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="button" class="b-search__close">
+                        <i class="material-icons large">close</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--/Search form end-->
+    </header>
+   
+    <main class="b-page">
+
+        <!--section main content start-->
+        <section class="container">
+            <h1 class="b-page__title">ВУСО</h1>
+            <!--breadcrumbs start-->
+            <ul class="b-crumb">
+                <li class="b-crumb__item" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a href="#" class="b-crumb__link" itemprop="url">
+                        <span itemprop="title">Главная</span>
+                    </a>
+                </li>
+                <li class="b-crumb__item" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a href="#" class="b-crumb__link" itemprop="url">
+                        <span itemprop="title">Страховые компании</span>
+                    </a>
+                </li>
+                <li class="b-crumb__item active">
+                    <span class="b-crumb__link">ВУСО</span>
+                </li>
+            </ul>
+            <!--/breadcrumbs end-->
+
+            <div class="row">
+                <div class="col s12 m3 l2">
+                    <p>
+                        <img src="img/company/logo01.png" class="responsive-img" alt="Logo" />
+                    </p>
+                </div>
+                <div class="col s12 m9 l7">
+                    <p>
+                        Более 40 отделениий по Украине.<br />
+                        150 точек продаж в автосалонах, крупных супермаркетах и АЗС по всей территории Украины.
+                    </p>
+                </div>
+                <div class="col s12 m12 l3 center-align">
+                    <p>
+                        <a href="#" rel="nofollow" target="_blank"><i class="material-icons">open_in_new</i>&nbsp;www.vuso.ua</a>
+                    </p>
+                    <button type="button" class="btn waves-effect waves-light">Оставить отзыв</button>
+                </div>
+            </div><!--/row-->
+            
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <th class="center-align">Выплаты на 2015г.</th>
+                        <th class="center-align">Средний срок выплат</th>
+                        <th class="center-align">Работает на рынке</th>
+                        <th class="center-align">Рейтинг отзывов</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="center-align"><b>250</b> млн.грн.</td>
+                        <td class="center-align"><b>2-3</b> дня</td>
+                        <td class="center-align"><b>9</b> лет</td>
+                        <td class="center-align"><b><span class="g-brand-color">4.5</span></b></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&nbsp;</p>
+        </section>
+        <!--/section main content end-->
+
+        <!--tabs section start-->
+        <section class="b-page__section b-page__section--alt">
+            <div class="container">
+                <h2 class="b-page__title">О компании ВУСО</h2>
+                <div class="row">
+                    <div class="col s12 m12 l9">
+                        <!--tabs start-->
+                        <div class="b-review">
+                            <ul class="b-review__list b-review__list--alt js-tabs">
+                                <li class="b-review__item">
+                                    <a href="#tab1" class="b-review__link">Топ по страхованию</a>
+                                </li>
+                                <li class="b-review__item">
+                                    <a href="#tab2" class="b-review__link">По выплатам</a>
+                                </li>
+                                <li class="b-review__item">
+                                    <a href="#tab3" class="b-review__link">По уровню выплат</a>
+                                </li>
+                                <li class="b-review__item">
+                                    <a href="#tab4" class="b-review__link">По размеру капитала</a>
+                                </li>
+                                <li class="b-review__item">
+                                    <a href="#tab5" class="b-review__link">Отчеты</a>
+                                </li>
+                                <li class="b-review__item">
+                                    <a href="#tab6" class="b-review__link">Отзывы (6)</a>
+                                </li>
+                                <li class="b-review__item">
+                                    <a href="#tab7" class="b-review__link">Услуги</a>
+                                </li>
+                                <li class="b-review__item">
+                                    <a href="#tab8" class="b-review__link">О компании</a>
+                                </li>
+                            </ul>
+
+                            <div class="b-review__tabs js-tabs-content">
+
+                                <div class="b-review__inner" id="tab1">
+                                    <span class="flow-text">По независимому рейтингу <a href="#" rel="nofollow" target="_blank">Forinsurer</a>:</span>
+                                    <ul class="g-list">
+                                        <li>ТОП8 на рынке страхования "Зеленая карта"</li>
+                                        <li>ТОП10 на рынке добровольного страхования ответственности владельцев водного транспорта</li>
+                                        <li>ТОП10 на рынке добровольного страхования водного транспорта</li>
+                                        <li>ТОП20 на рынке обязательного страхования гражданской авиации</li>
+                                        <li>ТОП40 на рынке добровольного медицинского страхования </li>
+                                        <li>ТОП50 на рынке добровольного страхования от несчастных случаев</li>
+                                        <li>ТОП50 на рынке КАСКО</li>
+                                        <li>ТОП40 на рынке ОСАГО</li>
+                                        <li>ТОП40 на рынке ДСАГО</li>
+                                        <li>ТОП45 на рынке добровольного страхования грузов и багажа</li>
+                                        <li>ТОП50 на рынке добровольного страхования имущества</li>
+                                        <li>ТОП50 на рынке добровольного страхования от огня и стихийных явлений</li>
+                                        <li>ТОП25 на рынке добровольного страхования на случай болезни</li>
+                                        <li>ТОП45 на рынке добровольного страхования медицинских расход</li>
+                                    </ul>
+                                </div>
+                                <div class="b-review__inner" id="tab2">
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                    <ul class="g-list">
+                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                                        <li>Aliquam tincidunt mauris eu risus.</li>
+                                        <li>Vestibulum auctor dapibus neque.</li>
+                                    </ul>
+                                </div>
+                                <div class="b-review__inner" id="tab3">
+                                    <ul class="g-list">
+                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                                        <li>Aliquam tincidunt mauris eu risus.</li>
+                                        <li>Vestibulum auctor dapibus neque.</li>
+                                    </ul>
+                                </div>
+                                <div class="b-review__inner" id="tab4">
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                </div>
+                                <div class="b-review__inner" id="tab5">
+                                    <table class="responsive-table">
+                                        <thead>
+                                            <tr>
+                                                <th class="center-align">Выплаты на 2015г.</th>
+                                                <th class="center-align">Средний срок выплат</th>
+                                                <th class="center-align">Работает на рынке</th>
+                                                <th class="center-align">Рейтинг отзывов</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="center-align"><b>250</b> млн.грн.</td>
+                                                <td class="center-align"><b>2-3</b> дня</td>
+                                                <td class="center-align"><b>9</b> лет</td>
+                                                <td class="center-align"><b><span class="g-brand-color">4.5</span></b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="b-review__inner" id="tab6">
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                </div>
+                                <div class="b-review__inner" id="tab7">
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                </div>
+                                <div class="b-review__inner" id="tab8">
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                </div>
+                            </div><!--/b-review__tabs-->
+                        </div><!--/b-review-->
+                        <!--/tabs end-->
+                    </div>
+
+                    <aside class="col s12 m12 l3">
+                        <!--banner start-->
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/del/insurance.jpeg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">ОСАГО<i class="material-icons right">more_vert</i></span>
+                                <p>10 литров бензина в подарок</p>
+                                <p><a href="#">Купить полис</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">ОСАГО<i class="material-icons right">close</i></span>
+                                <p>Подробный текст рекламного предложения</p>
+                                <a href="#" class="btn waves-effect waves-light">Купить полис</a>
+                            </div>
+                        </div>
+                        <!--/banner end-->
+                    </aside>
+                </div><!--/row-->
+            </div>
+        </section>
+        <!--/tabs section end-->
+
+        <!--table section start-->
+        <section class="b-page__section">
+            <div class="container">
+                <h2 class="b-page__title">Другие страховые компании</h2>
+                <table class="highlight responsive-table">
+                    <thead>
+                        <tr>
+                            <th>Страховые</th>
+                            <th><img src="img/company/logo01.png" alt="Company" class="g-table-logo" /></th>
+                            <th><img src="img/company/logo02.png" alt="Company" class="g-table-logo" /></th>
+                            <th><img src="img/company/logo03.png" alt="Company" class="g-table-logo" /></th>
+                            <th><img src="img/company/logo04.png" alt="Company" class="g-table-logo" /></th>
+                            <th><img src="img/company/logo05.png" alt="Company" class="g-table-logo" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Выплаты на 2015</th>
+                            <td>250 млн грн</td>
+                            <td>250 млн грн</td>
+                            <td>250 млн грн</td>
+                            <td>250 млн грн</td>
+                            <td>250 млн грн</td>
+                        </tr>
+                        <tr>
+                            <th>Средний срок выплат</th>
+                            <td>2-3 дня</td>
+                            <td>2-3 дня</td>
+                            <td>2-3 дня</td>
+                            <td>2-3 дня</td>
+                            <td>2-3 дня</td>
+                        </tr>
+                        <tr>
+                            <th>Работает на рынке</th>
+                            <td>9 лет</td>
+                            <td>9 лет</td>
+                            <td>9 лет</td>
+                            <td>9 лет</td>
+                            <td>9 лет</td>
+                        </tr>
+                        <tr>
+                            <th>Рейтинг отзывов</th>
+                            <td><span class="g-brand-color">4.5</span></td>
+                            <td><span class="g-brand-color">4.5</span></td>
+                            <td><span class="g-brand-color">4.5</span></td>
+                            <td><span class="g-brand-color">4.5</span></td>
+                            <td><span class="g-brand-color">4.5</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!--/table section end-->
+
+        <!--callback section start-->
+        <section class="b-callback">
+            <div class="container">
+                <h3 class="b-callback__title">Мы готовы оформить страховой полис прямо сейчас</h3>
+                <div class="row">
+                    <div class="col s12 m6 l3">
+                        <label class="b-callback__label">Оставьте номер для связи</label>
+                        <input type="text" class="b-callback__input js-input-phone" />
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <label class="b-callback__label">&nbsp;</label>
+                        <button type="submit" class="btn b-callback__btn waves-effect waves-light">Перезвоните мне</button>
+                    </div>
+                </div>
+                <p class="b-callback__agree">
+                    <input type="checkbox" id="chk1" class="filled-in" />
+                    <label for="chk1">связаться как можно быстрее</label>
+                </p>
+            </div>
+        </section>
+        <!--/callback section end-->        
+    </main>
+
+    <!--modal window callback start-->
+    <div id="callback" class="modal modal-fixed-footer b-modal-callback">
+        <form class="modal-content">
+            <h5>Заказать обратный звонок</h5>
+            <div class="input-field">
+                <input id="phone" type="text" class="validate b-modal-callback__input js-input-phone">
+                <label for="phone" class="b-modal-callback__label">Номер телефона</label>
+            </div>
+            <p>Укажите свой номер телефона, и мы перезвоним в течение 15 минут.</p>
+            <p>&nbsp;</p>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close btn-flat ">
+                <i class="material-icons">close</i>
+            </a>
+        </div>
+    </div>
+    <!--/modal window callback end-->
+
+    <footer class="b-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l5">
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <span class="b-footer__title">Продукты</span>
+                            <ul class="f-menu">
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Для бизнеса</a>
+                                </li>
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Страховые компании</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <span class="b-footer__title">О компании</span>
+                            <ul class="f-menu">
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Контакты</a>
+                                </li>
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Отзывы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/row-->
+                </div>
+                <div class="col s12 m12 l7">
+                    <div class="row">
+                        <div class="col s12 m6 l5">
+                            <div class="b-footer__contacts">
+                                <a href="tel:0800758758" class="b-footer__tel">0 800 758 758</a>
+                                <a href="mailto:info@narodna.ua" class="b-footer__mail">info@narodna.ua</a>
+
+                                <ul class="f-social">
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-vk"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l6 offset-l1">
+                            <ul class="f-logo">
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-visa.png" class="f-logo__img" alt="Visa" />
+                                    </a>
+                                </li>
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-master.png" class="f-logo__img" alt="Master Card" />
+                                    </a>
+                                </li>
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-privat.png" class="f-logo__img" alt="Privatbank" />
+                                    </a>
+                                </li>
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-24.png" class="f-logo__img" alt="Privat24" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/row-->
+                </div>
+            </div><!--/row-->
+        </div><!--/container-->
+    </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

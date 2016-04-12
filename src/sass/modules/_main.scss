@@ -65,6 +65,21 @@
 }
 
 
+.g-list{
+    li{
+        margin-bottom:7px;
+        padding-left: 1rem; 
+        text-indent: -.7rem;
+
+        &:before{
+            content:'\2022';
+            padding-right:.5rem;
+            color:$primary;
+        }
+    }
+}
+
+
 //логотипы-картинки в таблице
 img.g-table-logo{
     max-height:18px;
