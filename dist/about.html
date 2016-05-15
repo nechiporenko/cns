@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Page</title>
+    <meta name="description" content="Page Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="js/vendor/modernizr.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="b-header navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!--Logo start-->
+                    <a href="index.html" class="b-logo">
+                        <span class="b-logo__img">
+                            <svg height="100%" width="100%" version="1.1" y="0" x="0" viewBox="0 0 78.708664 98.000002">
+                                <g transform="matrix(1.5433 0 0 1.5433 -95.531 -61.887)">
+                                    <g>
+                                        <path fill="#f68b1f" d="m87.4 40.1c-14.1 0-25.5 11.4-25.5 25.5 0 13.7 23.2 36.5 24.1 37.4 0.4 0.4 0.9 0.6 1.4 0.6s1-0.2 1.4-0.6c1-1 24.1-23.8 24.1-37.4 0-14-11.4-25.5-25.5-25.5z" />
+                                        <path fill="#fff" d="m89.2 66.5h12.6c0-7.9-6.4-14.3-14.3-14.3s-14.3 6.4-14.3 14.3h13.2v8.7 0.1 0.1c0 1-0.8 1.8-1.8 1.8s-1.8-0.8-1.8-1.8c0-0.8-0.6-1.4-1.4-1.4s-1.4 0.6-1.4 1.4c0 2.6 2.1 4.6 4.6 4.6 2.6 0 4.6-2.1 4.6-4.6v-0.1-0.1-8.7z" />
+		                            </g>
+	                            </g>
+                            </svg>
+                        </span>
+                        <span class="b-logo__title">Центр народного страхования</span>
+                    </a>
+                    <!--/Logo end-->
+
+                    <!--Mobile buttons start-->
+                    <button type="button" data-activates="mobile-menu" class="button-collapse b-header__btn">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <button type="button" class="b-header__btn modal-trigger" data-target="callback">
+                        <i class="material-icons">phone</i>
+                    </button>
+                    <button type="button" class="b-header__btn" data-searchform>
+                        <i class="material-icons">search</i>
+                    </button>
+                    <!--/Mobile buttons end-->
+
+                    <!--Left desktop menu start-->
+                    <ul class="b-menu b-menu--left">
+                        <li class="b-menu__item">
+                            <a class="dropdown-button" href="#!" data-activates="services" data-constrainwidth="false">
+                                Все услуги
+                                <span class="icon-triangle-down"></span>
+                            </a>
+                            <ul id="services" class="dropdown-content b-submenu">
+                                <li class="b-submenu__item">
+                                    <a href="#!">Автомобили</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Здоровье</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Недвижимость</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Ответственность</a>
+                                </li>
+                                <li class="divider b-submenu__item b-submenu__item--large"></li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#!">Для бизнеса</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large active">
+                                    <a href="#!">О нас</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#!">Контакты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Отзывы</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Для бизнеса</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large active">
+                            <a href="#!">О нас</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Контакты</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <button type="button" class="waves-effect waves-light btn b-menu__callback modal-trigger" data-target="callback">Заказать звонок</button>
+                        </li>
+                    </ul>
+                    <!--/Left desktop menu end-->
+
+                    <!--Right desktop menu start-->
+                    <ul class="b-menu b-menu--right">
+                        <li class="b-menu__item">
+                            <a href="#" data-searchform>
+                                <i class="icon-search"></i>
+                            </a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#" class="b-menu__userlink">
+                               <span class="b-menu__user">
+                                   <i class="icon-user"></i>
+                               </span>
+                            </a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#!" class="dropdown-button" data-activates="lang" data-constrainwidth="false" data-alignment="right">
+                                рус
+                                <span class="icon-triangle-down"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--/Right desktop menu end-->
+                </div>
+            </div>
+            
+            <!--Lang menu start-->
+            <ul id="lang" class="dropdown-content">
+                <li><a href="#" hreflang="ru">Русский</a></li>
+                <li><a href="#" hreflang="uk">Украинский</a></li>
+                <li><a href="#" hreflang="en">Английский</a></li>
+            </ul>
+            <!--/Lang menu end-->
+
+            <!--Mobile menu start-->
+            <ul class="side-nav" id="mobile-menu">
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Все услуги<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!">Автомобили</a></li>
+                                    <li><a href="#!">Здоровье</a></li>
+                                    <li><a href="#!">Недвижимость</a></li>
+                                    <li><a href="#!">Ответственность    </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#!">Отзывы</a></li>
+                <li><a href="#!">Для бизнеса</a></li>
+                <li><a href="#!">О нас</a></li>
+                <li><a href="#!">Контакты</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Войти...</a></li>
+            </ul>
+            <!--/Mobile menu end-->
+        </nav>
+
+        <!--Search form start-->
+        <div class="b-search">
+            <div class="b-search__wrapper">
+                <div class="b-search__inner">
+                    <div class="container">
+                        <span class="b-search__title">Введите слово и нажмите Enter</span>
+                        <form>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">search</i>
+                                    <input id="search" type="text">
+                                    <label for="search">Поиск по сайту...</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="button" class="b-search__close">
+                        <i class="material-icons large">close</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--/Search form end-->
+    </header>
+   
+    <main class="b-page">
+
+        <!--section main content start-->
+        <section class="container b-about">
+            <h1 class="b-page__title">Ответь себе на 5 вопросов и выбери Центр народного страхования</h1>
+            <div class="row">
+                <div class="col s12 l9">
+                    <div class="b-about__line">
+                        <i class="material-icons small b-about__icon">live_help</i>
+                        <span class="b-about__title">Надоело бегать по страховым компаниям в поисках лучших условий?</span>
+                        <p>Центр Народного Страхования сделает для тебя анализ предложений всех топовых СК и скажет где лучше.</p>
+                    </div>
+                    <div class="b-about__line">
+                        <i class="material-icons small b-about__icon">live_help</i>
+                        <span class="b-about__title">Что это будет для тебя стоить?</span>
+                        <p>Ничего. Стоимость страхования будет такая же как в СК, даже лучше.</p>
+                    </div>
+                    <div class="b-about__line">
+                        <i class="material-icons small b-about__icon">live_help</i>
+                        <span class="b-about__title">Переживаешь, что тебе не выплатят?</span>
+                        <p>Мы выбрали для тебя топ-10 компаний, которые платят. С 2006 года испробовали на себе подводные камни страхования.</p>
+                    </div>
+                    <div class="b-about__line">
+                        <i class="material-icons small b-about__icon">live_help</i>
+                        <span class="b-about__title">Слышал что такое Агрегатная сумма и коэффициент пропорциональности?</span>
+                        <p>Поможем тебе разобраться в тонкостях страхования. Cтраховщики снижают стоимость за счет ухудшения условий.</p>
+                    </div>
+                    <div class="b-about__line">
+                        <i class="material-icons small b-about__icon">live_help</i>
+                        <span class="b-about__title">У тебя еще есть сомнения, по поводу нас?</span>
+                        <ul class="g-list">
+                            <li>Мы зарегистрированы в МТСБУ</li>
+                            <li>Только прямые договора со страховыми компаниями</li>
+                            <li>Всегда выдаем платежные документы </li>
+                            <li>У нас собственный контакт-центр, где всегда можно получить консультацию и помощь</li>
+                            <li>Мы доставим тебе договора страхования, когда и куда захочешь</li>
+                            <li>Мы активно открываем центры обслуживания по всей Украине</li>
+                        </ul>
+                    </div>
+                </div>
+                <aside class="col s12 l3">
+                    <ul class="g-side-menu">
+                        <li>
+                            <a href="#">Наши курьеры</a>
+                        </li>
+                        <li>
+                            <a href="#">Пресса о нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Миссия и ценности</a>
+                        </li>
+                        <li>
+                            <a href="#">Сотрудники</a>
+                        </li>
+                        <li>
+                            <a href="#">Отчеты</a>
+                        </li>
+                        <li>
+                            <a href="#">Отзывы</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div><!--/row-->
+            <div class="row">
+                <div class="col s12 m3">
+                    <svg viewBox="0 0 169.057 160" version="1.1" class="b-about__img">
+                        <g fill="#119ec9">
+                            <path d="M105.66 111.698h-6.036c-1.667 0-3.02 1.35-3.02 3.02 0 1.666 1.353 3.017 3.02 3.017h6.036c1.668 0 3.02-1.35 3.02-3.018 0-1.668-1.352-3.02-3.02-3.02z" />
+                            <path d="M149.434 57.358c-.508 0-1.01.026-1.51.064v-36.29C147.924 9.48 138.444 0 126.794 0h-84.53C30.612 0 21.132 9.48 21.132 21.132v36.29c-.5-.038-1-.064-1.51-.064C8.802 57.358 0 66.16 0 76.98c0 6.77 3.426 12.946 9.057 16.535v39.818c0 .135.012.268.03.398.467 7.91 7.044 14.2 15.064 14.2v3.02c0 5 4.07 9.06 9.06 9.06s9.06-4.06 9.06-9.05v-3.02h84.53v3.02c0 4.997 4.07 9.06 9.06 9.06s9.06-4.062 9.06-9.056v-3.02c8.02 0 14.6-6.29 15.07-14.195.02-.13.03-.263.03-.398V93.52c5.63-3.59 9.06-9.767 9.06-16.535 0-10.82-8.802-19.62-19.622-19.62zM27.17 21.132c0-8.323 6.77-15.094 15.094-15.094h84.528c8.323 0 15.095 6.77 15.095 15.094V58.87c-7.084 2.963-12.076 9.964-12.076 18.11v13.594c-2.52-1.9-5.66-3.027-9.05-3.027H48.3c-3.396 0-6.532 1.128-9.057 3.027V76.98c0-8.146-4.99-15.147-12.075-18.11V21.132zm9.056 129.81c0 1.666-1.354 3.02-3.018 3.02-1.665 0-3.02-1.354-3.02-3.02v-3.017h6.038v3.018zm102.642 0c0 1.666-1.354 3.02-3.02 3.02-1.663 0-3.018-1.354-3.018-3.02v-3.017h6.038v3.018zm16.74-61.86c-1.01.515-1.646 1.553-1.646 2.687v41.06c0 4.99-4.062 9.05-9.056 9.05H24.15c-4.993 0-9.056-4.07-9.056-9.06V91.77c0-1.135-.635-2.173-1.644-2.69-4.572-2.337-7.412-6.973-7.412-12.1 0-7.49 6.094-13.584 13.585-13.584 7.49 0 13.585 6.094 13.585 13.585v25.67c0 8.33 6.77 15.1 15.094 15.1h39.244c1.668 0 3.02-1.35 3.02-3.02s-1.352-3.02-3.02-3.02H48.302c-4.994 0-9.057-4.06-9.057-9.05 0-4.993 4.063-9.056 9.057-9.056h72.453c4.993 0 9.056 4.063 9.056 9.057 0 4.99-4.06 9.054-9.05 9.054h-3.02c-1.66 0-3.02 1.35-3.02 3.02 0 1.667 1.35 3.018 3.02 3.018h3.02c8.32 0 15.1-6.77 15.1-15.09V76.99c0-7.49 6.1-13.585 13.59-13.585s13.59 6.095 13.59 13.585c0 5.127-2.84 9.763-7.413 12.1z" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="col s12 m9">
+                    <div class="b-about__hero valign-wrapper">
+                        <p class="valign">
+                            У нас ты сможешь оформить страховку не выходя из дома.<br />
+                            Мы среди первых, кто запустил онлайн страхование.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/section main content end-->
+
+        <section class="b-page__section b-page__section--alt">
+            <div class="container">
+                <h2 class="b-page__subtitle">Остались вопросы?</h2>
+                <div class="row">
+                    <!--form-->
+                    <form class="col s12 l7">
+                        Позвони, и наши консультанты помогут во всем разобраться!<br />
+                        <div class="input-field">
+                            <textarea id="text01" class="materialize-textarea"></textarea>
+                            <label for="text01">Как мы можем Вам помочь?</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="inp01" />
+                            <label for="inp01">Электронная почта или телефон</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="inp02" />
+                            <label for="inp02">Как Вас зовут?</label>
+                        </div>
+                        <button type="button" class="btn btn-large waves-effect waves-light">Жду ответ</button>
+                        <p>&nbsp;</p>
+                    </form>
+                    <!--/form-->
+                    <aside class="col s12 l4 offset-l1">
+                        <!--managers-->
+                        <div class="row">
+                            <div class="col s3">
+                                <img src="http://placehold.it/160x160" class="responsive-img circle" alt="" />
+                            </div>
+                            <div class="col s9">
+                                <b>Отдел продаж</b>
+                                <br />
+                                Алексей Резников
+                                <br />
+                                <a href="tel:+380977322132">097 732-21-32</a>
+                                <br />
+                                <a href="mailto:alex@cns.ua">alex@cns.ua</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s3">
+                                <img src="http://placehold.it/160x160" class="responsive-img circle" alt="" />
+                            </div>
+                            <div class="col s9">
+                                <b>Отдел выплат</b>
+                                <br />
+                                Алена Резникова
+                                <br />
+                                <a href="tel:+380977322132">097 732-21-32</a>
+                                <br />
+                                <a href="mailto:alex@cns.ua">alex@cns.ua</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s3">
+                                <img src="http://placehold.it/160x160" class="responsive-img circle" alt="" />
+                            </div>
+                            <div class="col s9">
+                                <b>Для корпоративных клиентов</b>
+                                <br />
+                                Виктор Строганов
+                                <br />
+                                <a href="tel:+380977322132">097 732-21-32</a>
+                                <br />
+                                <a href="mailto:alex@cns.ua">alex@cns.ua</a>
+                            </div>
+                        </div>
+                        <!--managers-->
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="b-page__section">
+            <div class="container">
+                <h3 class="b-page__title center blue-text text-lighten-2">
+                    Добро пожаловать в Центр Народного Страхования!
+                    <br />
+                    Мы не любим громких обещаний, мы просто делаем.
+                </h3>
+            </div>
+        </section>
+    </main>
+
+    <!--modal window callback start-->
+    <div id="callback" class="modal modal-fixed-footer b-modal-callback">
+        <form class="modal-content">
+            <h5>Заказать обратный звонок</h5>
+            <div class="input-field">
+                <input id="phone" type="text" class="validate b-modal-callback__input js-input-phone">
+                <label for="phone" class="b-modal-callback__label">Номер телефона</label>
+            </div>
+            <p>Укажите свой номер телефона, и мы перезвоним в течение 15 минут.</p>
+            <p>&nbsp;</p>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close btn-flat ">
+                <i class="material-icons">close</i>
+            </a>
+        </div>
+    </div>
+    <!--/modal window callback end-->
+
+    <footer class="b-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l5">
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <span class="b-footer__title">Продукты</span>
+                            <ul class="f-menu">
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Для бизнеса</a>
+                                </li>
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Страховые компании</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <span class="b-footer__title">О компании</span>
+                            <ul class="f-menu">
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Контакты</a>
+                                </li>
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Отзывы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/row-->
+                </div>
+                <div class="col s12 m12 l7">
+                    <div class="row">
+                        <div class="col s12 m6 l5">
+                            <div class="b-footer__contacts">
+                                <a href="tel:0800758758" class="b-footer__tel">0 800 758 758</a>
+                                <a href="mailto:info@narodna.ua" class="b-footer__mail">info@narodna.ua</a>
+
+                                <ul class="f-social">
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-vk"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l6 offset-l1">
+                            <ul class="f-logo">
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-visa.png" class="f-logo__img" alt="Visa" />
+                                    </a>
+                                </li>
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-master.png" class="f-logo__img" alt="Master Card" />
+                                    </a>
+                                </li>
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-privat.png" class="f-logo__img" alt="Privatbank" />
+                                    </a>
+                                </li>
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-24.png" class="f-logo__img" alt="Privat24" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/row-->
+                </div>
+            </div><!--/row-->
+        </div><!--/container-->
+    </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

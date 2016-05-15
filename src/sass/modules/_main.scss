@@ -125,3 +125,10 @@ blockquote{
         }
     }
 }
+
+//фиксим дефолтные вкладки
+@include media($tablet){
+    .tabs{
+        overflow:hidden;
+    }
+}

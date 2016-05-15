@@ -1,0 +1,612 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Page</title>
+    <meta name="description" content="Page Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="js/vendor/modernizr.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="b-header navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!--Logo start-->
+                    <a href="index.html" class="b-logo">
+                        <span class="b-logo__img">
+                            <svg height="100%" width="100%" version="1.1" y="0" x="0" viewBox="0 0 78.708664 98.000002">
+                                <g transform="matrix(1.5433 0 0 1.5433 -95.531 -61.887)">
+                                    <g>
+                                        <path fill="#f68b1f" d="m87.4 40.1c-14.1 0-25.5 11.4-25.5 25.5 0 13.7 23.2 36.5 24.1 37.4 0.4 0.4 0.9 0.6 1.4 0.6s1-0.2 1.4-0.6c1-1 24.1-23.8 24.1-37.4 0-14-11.4-25.5-25.5-25.5z" />
+                                        <path fill="#fff" d="m89.2 66.5h12.6c0-7.9-6.4-14.3-14.3-14.3s-14.3 6.4-14.3 14.3h13.2v8.7 0.1 0.1c0 1-0.8 1.8-1.8 1.8s-1.8-0.8-1.8-1.8c0-0.8-0.6-1.4-1.4-1.4s-1.4 0.6-1.4 1.4c0 2.6 2.1 4.6 4.6 4.6 2.6 0 4.6-2.1 4.6-4.6v-0.1-0.1-8.7z" />
+		                            </g>
+	                            </g>
+                            </svg>
+                        </span>
+                        <span class="b-logo__title">Центр народного страхования</span>
+                    </a>
+                    <!--/Logo end-->
+
+                    <!--Mobile buttons start-->
+                    <button type="button" data-activates="mobile-menu" class="button-collapse b-header__btn">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <button type="button" class="b-header__btn modal-trigger" data-target="callback">
+                        <i class="material-icons">phone</i>
+                    </button>
+                    <button type="button" class="b-header__btn" data-searchform>
+                        <i class="material-icons">search</i>
+                    </button>
+                    <!--/Mobile buttons end-->
+
+                    <!--Left desktop menu start-->
+                    <ul class="b-menu b-menu--left">
+                        <li class="b-menu__item">
+                            <a class="dropdown-button" href="#!" data-activates="services" data-constrainwidth="false">
+                                Все услуги
+                                <span class="icon-triangle-down"></span>
+                            </a>
+                            <ul id="services" class="dropdown-content b-submenu">
+                                <li class="b-submenu__item">
+                                    <a href="#!">Автомобили</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Здоровье</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Недвижимость</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Ответственность</a>
+                                </li>
+                                <li class="divider b-submenu__item b-submenu__item--large"></li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#!">Для бизнеса</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#!">О нас</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large active">
+                                    <a href="#!">Контакты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Отзывы</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Для бизнеса</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">О нас</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large active">
+                            <a href="#!">Контакты</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <button type="button" class="waves-effect waves-light btn b-menu__callback modal-trigger" data-target="callback">Заказать звонок</button>
+                        </li>
+                    </ul>
+                    <!--/Left desktop menu end-->
+
+                    <!--Right desktop menu start-->
+                    <ul class="b-menu b-menu--right">
+                        <li class="b-menu__item">
+                            <a href="#" data-searchform>
+                                <i class="icon-search"></i>
+                            </a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#" class="b-menu__userlink">
+                               <span class="b-menu__user">
+                                   <i class="icon-user"></i>
+                               </span>
+                            </a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#!" class="dropdown-button" data-activates="lang" data-constrainwidth="false" data-alignment="right">
+                                рус
+                                <span class="icon-triangle-down"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--/Right desktop menu end-->
+                </div>
+            </div>
+            
+            <!--Lang menu start-->
+            <ul id="lang" class="dropdown-content">
+                <li><a href="#" hreflang="ru">Русский</a></li>
+                <li><a href="#" hreflang="uk">Украинский</a></li>
+                <li><a href="#" hreflang="en">Английский</a></li>
+            </ul>
+            <!--/Lang menu end-->
+
+            <!--Mobile menu start-->
+            <ul class="side-nav" id="mobile-menu">
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Все услуги<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!">Автомобили</a></li>
+                                    <li><a href="#!">Здоровье</a></li>
+                                    <li><a href="#!">Недвижимость</a></li>
+                                    <li><a href="#!">Ответственность    </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#!">Отзывы</a></li>
+                <li><a href="#!">Для бизнеса</a></li>
+                <li><a href="#!">О нас</a></li>
+                <li><a href="#!">Контакты</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Войти...</a></li>
+            </ul>
+            <!--/Mobile menu end-->
+        </nav>
+
+        <!--Search form start-->
+        <div class="b-search">
+            <div class="b-search__wrapper">
+                <div class="b-search__inner">
+                    <div class="container">
+                        <span class="b-search__title">Введите слово и нажмите Enter</span>
+                        <form>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">search</i>
+                                    <input id="search" type="text">
+                                    <label for="search">Поиск по сайту...</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="button" class="b-search__close">
+                        <i class="material-icons large">close</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--/Search form end-->
+    </header>
+   
+    <main class="b-page">
+        <!--section main content start-->
+        <section class="container">
+            <h1 class="b-page__title">Мы всегда рядом</h1>
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs" id="main_tab">
+                        <li class="tab col s3"><a href="#kyiv" class="active">Киев</a></li>
+                        <li class="tab col s3"><a href="#odesa">Одесса</a></li>
+                        <li class="tab col s3"><a href="#kharkiv">Харьков</a></li>
+                        <li class="tab col s3"><a href="#lviv">Львов</a></li>
+                    </ul>
+                </div>
+                <!--kyiv-->
+                <div id="kyiv" class="col s12">
+                    <div class="row">
+                        <div class="col s12 m6 l3">
+                            <p>
+                                <a href="tel:+380441234567">+38 (044) 123-45-67</a>
+                            </p>
+                            <p>
+                                <a href="mailto:info@cns.ua">info@cns.ua</a>
+                            </p>
+                            <p>
+                                пн-пт 09-18, сб. 10-17
+                            </p>
+                        </div>
+                        <div class="col s12 m6 l3">
+                            <div class="row">
+                                <div class="col s3">
+                                    <p>
+                                        <img src="http://placehold.it/160x160" class="responsive-img circle" alt="" />
+                                    </p>
+                                </div>
+                                <div class="col s9">
+                                    <p><b>Отдел продаж</b></p>
+                                    Алексей Резников
+                                    <br />
+                                    <a href="tel:+380977322132">097 732-21-32</a>
+                                    <br />
+                                    <a href="mailto:alex@cns.ua">alex@cns.ua</a>
+                                    <div>
+                                        <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                                        <div id="SkypeButton_Call_alex.cns.ua_1">
+                                            <script type="text/javascript">
+                                                 Skype.ui({
+                                                 "name": "call",
+                                                 "element": "SkypeButton_Call_alex.cns.ua_1",
+                                                 "participants": ["alex.cns.ua"]
+                                                 });
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l3">
+                            <div class="row">
+                                <div class="col s3">
+                                    <p><img src="http://placehold.it/160x160" class="responsive-img circle" alt="" /></p>
+                                </div>
+                                <div class="col s9">
+                                    <p><b>Отдел выплат</b></p>
+                                    Алена Резникова
+                                    <br />
+                                    <a href="tel:+380977322132">097 732-21-32</a>
+                                    <br />
+                                    <a href="mailto:alex@cns.ua">alex@cns.ua</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l3">
+                            <div class="row">
+                                <div class="col s3">
+                                    <p><img src="http://placehold.it/160x160" class="responsive-img circle" alt="" /></p>
+                                </div>
+                                <div class="col s9">
+                                    <p><b>Для корпоративных клиентов</b></p>
+                                    Виктор Строганов
+                                    <br />
+                                    <a href="tel:+380977322132">097 732-21-32</a>
+                                    <br />
+                                    <a href="mailto:alex@cns.ua">alex@cns.ua</a>
+                                    <div>
+                                        <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                                        <div id="SkypeButton_Call_viks.cns.ua_1">
+                                            <script type="text/javascript">
+                                                 Skype.ui({
+                                                 "name": "call",
+                                                 "element": "SkypeButton_Call_viks.cns.ua_1",
+                                                 "participants": ["viks.cns.ua"],
+                                                 });
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/row-->
+
+                    <section>
+                        <h2 class="b-page__subtitle">Приезжайте в гости</h2>
+                        <div class="row">
+                            <div class="col s12 l7">
+                                <div class="g-map" id="map1"></div>
+                            </div>
+                            <aside class="col s12 l5">
+                                <ul>
+                                    <li>
+                                        <i class="material-icons orange-text">location_on</i>&emsp;Киев, ул.Большая Васильковская 15<br />
+                                        (ст.м. Олимпийская)
+                                    </li>
+                                    <li><i class="material-icons orange-text">query_builder</i>&emsp;пн-пт 09-18, сб 10-17</li>
+                                    <li><i class="material-icons orange-text">print</i>&emsp;<a href="#!">Распечатать схему проезда</a></li>
+                                </ul>
+                                <b>Как добраться:</b>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <ul class="tabs">
+                                            <li class="tab col s6 m6 l3">
+                                                <a href="#tab01" class="active">На авто</a>
+                                            </li>
+                                            <li class="tab col s6 m6 l9">
+                                                <a href="#tab02">На общественном транспорте</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col s12" id="tab01">
+                                        <p><b>GPS координаты:</b></p>
+                                        Широта: 50.4546600<br />
+                                        Долгота: 30.5238000<br />
+                                        Есть бесплатная парковка
+                                    </div>
+                                    <div class="col s12" id="tab02">
+                                        <p><b>На метро:</b></p>
+                                        ст.м. «Олимпийская»
+                                    </div>
+                                </div>
+                            </aside>
+                        </div><!--/row-->
+                    </section>
+                </div>
+                <!--/kyiv-->
+
+                <!--odesa-->
+                <div id="odesa" class="col s12">
+                    <p>Odesa tab content</p>
+                    <section>
+                        <h2 class="b-page__subtitle">Приезжайте в гости</h2>
+                        <div class="row">
+                            <div class="col s12 l7">
+                                <div class="g-map" id="map2"></div>
+                            </div>
+                            <aside class="col s12 l5">
+                                <p>как добраться</p>
+                            </aside>
+                        </div><!--/row-->
+                    </section>
+                </div>
+                <!--/odesa-->
+                <!--kharkiv-->
+                <div id="kharkiv" class="col s12">
+                    <p>Kharkiv tab content</p>
+                </div>
+                <!--/kharkiv-->
+                <!--lviv-->
+                <div id="lviv" class="col s12">
+                    <p>Lviv tab content</p>
+                </div>
+                <!--/lviv-->
+            </div>
+        </section>
+        <!--/section main content end-->        
+
+        <section class="b-page__section">
+            <div class="container">
+                <h3 class="b-page__subtitle">У нас компетентные консультанты</h3>
+                <div class="row">
+                    <!--form-->
+                    <form class="col s12 l7">
+                        Позвони, и наши консультанты помогут во всем разобраться!<br />
+                        <div class="input-field">
+                            <textarea id="text01" class="materialize-textarea"></textarea>
+                            <label for="text01">Как мы можем Вам помочь?</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="inp01" />
+                            <label for="inp01">Электронная почта или телефон</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="inp02" />
+                            <label for="inp02">Как Вас зовут?</label>
+                        </div>
+                        <button type="button" class="btn btn-large waves-effect waves-light">Жду ответ</button>
+                        <p>&nbsp;</p>
+                    </form>
+                    <!--/form-->
+                    <aside class="col s12 l4 offset-l1">
+                        <ul class="g-side-menu">
+                            <li>
+                                <a href="#">Вопросы и ответы</a>
+                            </li>
+                            <li>
+                                <a href="#">Свидетельства и сертификаты</a>
+                            </li>
+                            <li>
+                                <a href="#">Пожаловаться директору</a>
+                            </li>
+                            <li>
+                                <a href="#">Фейсбук</a>
+                            </li>
+                            <li>
+                                <a href="#">Вконтакте</a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--modal window callback start-->
+    <div id="callback" class="modal modal-fixed-footer b-modal-callback">
+        <form class="modal-content">
+            <h5>Заказать обратный звонок</h5>
+            <div class="input-field">
+                <input id="phone" type="text" class="validate b-modal-callback__input js-input-phone">
+                <label for="phone" class="b-modal-callback__label">Номер телефона</label>
+            </div>
+            <p>Укажите свой номер телефона, и мы перезвоним в течение 15 минут.</p>
+            <p>&nbsp;</p>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close btn-flat ">
+                <i class="material-icons">close</i>
+            </a>
+        </div>
+    </div>
+    <!--/modal window callback end-->
+
+    <footer class="b-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l5">
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <span class="b-footer__title">Продукты</span>
+                            <ul class="f-menu">
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Для бизнеса</a>
+                                </li>
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Страховые компании</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <span class="b-footer__title">О компании</span>
+                            <ul class="f-menu">
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Контакты</a>
+                                </li>
+                                <li class="f-menu__item">
+                                    <a href="#!" class="f-menu__link">Отзывы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/row-->
+                </div>
+                <div class="col s12 m12 l7">
+                    <div class="row">
+                        <div class="col s12 m6 l5">
+                            <div class="b-footer__contacts">
+                                <a href="tel:0800758758" class="b-footer__tel">0 800 758 758</a>
+                                <a href="mailto:info@narodna.ua" class="b-footer__mail">info@narodna.ua</a>
+
+                                <ul class="f-social">
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-vk"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-social__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l6 offset-l1">
+                            <ul class="f-logo">
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-visa.png" class="f-logo__img" alt="Visa" />
+                                    </a>
+                                </li>
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-master.png" class="f-logo__img" alt="Master Card" />
+                                    </a>
+                                </li>
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-privat.png" class="f-logo__img" alt="Privatbank" />
+                                    </a>
+                                </li>
+                                <li class="f-logo__item">
+                                    <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                        <img src="img/f-logo-24.png" class="f-logo__img" alt="Privat24" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/row-->
+                </div>
+            </div><!--/row-->
+        </div><!--/container-->
+    </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.min.js"></script>
+    <script>
+        function initialize() {
+            var map1_lating = new google.maps.LatLng(50.439548, 30.518798),
+                map2_lating = new google.maps.LatLng(48.516003, 35.082625),
+                map1_options = {
+                    zoom: 18,
+                    center: map1_lating,
+                    panControl: false,
+                    zoomControl: true,
+                    scrollwheel: false,
+                    streetViewControl: false,
+                    scaleControl: true,
+                    mapTypeId: google.maps.MapTypeId.ROAD
+                },
+                map2_options = {
+                    zoom: 15,
+                    center: map2_lating,
+                    panControl: false,
+                    zoomControl: true,
+                    scrollwheel: false,
+                    streetViewControl: false,
+                    scaleControl: true,
+                    mapTypeId: google.maps.MapTypeId.ROAD
+                },
+                map1 = new google.maps.Map(document.getElementById('map1'),
+                map1_options),
+                map2 = new google.maps.Map(document.getElementById('map2'),
+                map2_options),
+                marker1 = new google.maps.Marker({
+                    position: map1_lating,
+                    icon: "img/marker.png",
+                    map: map1
+                }),
+                marker2 = new google.maps.Marker({
+                    position: map2_lating,
+                    icon: "img/marker.png",
+                    map: map2
+                }),
+                info1 = new google.maps.InfoWindow({
+                    content: '<div class="g-map__title"><b>CNS Киев</b></div>'
+                }),
+                info2 = new google.maps.InfoWindow({
+                    content: '<div class="g-map__title"><b>CNS Одесса</b></div>'
+                });
+
+            google.maps.event.addListener(marker1, 'mouseover', function () {
+                info1.open(map1, marker1);
+            });
+            google.maps.event.addListener(marker1, 'mouseout', function () {
+                info1.close(map1, marker1);
+            });
+            google.maps.event.addListener(marker2, 'mouseover', function () {
+                info2.open(map2, marker2);
+            });
+            google.maps.event.addListener(marker2, 'mouseout', function () {
+                info2.close(map2, marker2);
+            });
+            
+            google.maps.event.addDomListener(window, 'resize', function () {
+                var center1 = map1.getCenter(),
+                    center2 = map2.getCenter();
+                google.maps.event.trigger(map1, 'resize');
+                google.maps.event.trigger(map2, 'resize');
+                map1.setCenter(center1);
+                map2.setCenter(center2);
+            });
+        };
+
+        function loadScript() {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+                'callback=initialize';
+            document.body.appendChild(script);
+        };
+        window.onload = loadScript;
+    </script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('#main_tab').on('click', 'a', function () {
+                google.maps.event.trigger(window, 'resize', {});
+            });
+        });
+    </script>
+</body>
+</html>

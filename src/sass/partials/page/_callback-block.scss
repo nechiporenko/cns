@@ -84,3 +84,24 @@ input.b-callback__input{
        border-bottom-color:#4caf50;
     }
 }
+
+.b-callback__time{//скрытый select - покажем скриптом когда снимут 
+    padding-left:36px;
+    position:relative;
+
+
+
+    .input-field{
+        margin-top:0;
+    }
+    .caret{
+        color:$callback-color !important;
+    }
+    .select-dropdown{
+        border-bottom-color:$callback-color !important;
+    }
+}
+.b-callback__timeicon{
+    position:absolute;
+    left:0; top:12px;
+}

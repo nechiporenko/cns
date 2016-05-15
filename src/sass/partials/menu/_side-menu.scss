@@ -1,0 +1,18 @@
+﻿@import "../../modules/_base.scss";
+/*Side additional menu*/
+.g-side-menu{
+    margin-top:0;
+    font-size:rem(18px);
+
+    li{
+        display:block;
+        margin-bottom:10px;
+    }
+
+    a{
+        &:hover,
+        &:active{
+            color:$primary;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+﻿@import "../../modules/_base.scss";
+/*About us - block*/
+.b-about{}
+.b-about__line{
+    position:relative;
+    padding-left:40px;
+}
+
+.b-about__icon{
+    color:$primary-alt1;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.b-about__title{
+    display:block;
+    font-family:$font-sans-alt;
+    font-weight:600;
+    font-size:rem(21px);
+    line-height:1.2;
+    color:$title-color;
+}
+
+.b-about__img{
+    display:block;
+    margin:0 auto;
+    max-width:160px;
+    height:auto;
+}
+.b-about__hero{
+    height:150px;
+    color:$primary-alt;
+    font-family:$font-sans-alt;
+    font-weight:600;
+    font-size:rem(21px);
+}

@@ -10,6 +10,8 @@
 // хиро слайдер
 // слайдер просмотров
 // видео в модальном окне
+// callback-block - покажем скрытый select когда снимаем галочку с чекбокса
+// оформление ОСАГО - по клику на линк покажем дополнительные поля формы
 
 jQuery(document).ready(function ($) {
     //
@@ -291,5 +293,39 @@ jQuery(document).ready(function ($) {
     // маска для телефонного номера
     //---------------------------------------------------------------------------------------
     $('.js-input-phone').mask('+38 (099) 999-99-99');
+
+    //
+    // callback-block - покажем скрытый select когда снимаем галочку с чекбокса
+    //---------------------------------------------------------------------------------------
+    function showcallbackBlock() {
+        $('.js-callback-check').one('change', function () {
+            if (!$(this).is(':checked')) {
+                $(this).parent('p').addClass('hide');
+                $('.js-callback-check-target').removeClass('hide');
+            }
+        });
+    };
+    if ($('.js-callback-check').length) {
+        showcallbackBlock();
+    };
+
+    //
+    // оформление ОСАГО - по клику на линк покажем дополнительные поля формы
+    //---------------------------------------------------------------------------------------
+    function showFormBlock() {
+        $('.js-form-links').one('click', 'a', function (e) {
+            e.preventDefault();
+            var target = $(this).attr('href'),
+                $target = $(target);
+            if ($target.length) {
+                $('.js-form-links').hide();
+                $target.removeClass('hide');
+                $('html, body').animate({ scrollTop: $target.offset().top - 50 }, 800);
+            }
+        });
+    };
+    if ($('.js-form-links').length) {
+        showFormBlock();
+    };
 
 });

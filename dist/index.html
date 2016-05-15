@@ -55,7 +55,7 @@
                     <!--Left desktop menu start-->
                     <ul class="b-menu b-menu--left">
                         <li class="b-menu__item">
-                            <a class="dropdown-button" href="#!" data-activates="services" data-constrainwidth="false">
+                            <a class="dropdown-button b-menu__dropdown" href="#!" data-activates="services" data-constrainwidth="false">
                                 Все услуги
                                 <span class="icon-triangle-down"></span>
                             </a>
@@ -373,9 +373,26 @@
                     </div>
                 </div>
                 <p class="b-callback__agree">
-                    <input type="checkbox" id="chk1" class="filled-in" />
+                    <input type="checkbox" id="chk1" class="filled-in js-callback-check" checked />
                     <label for="chk1">связаться как можно быстрее</label>
                 </p>
+                <div class="row hide js-callback-check-target">
+                    <div class="col s12 m12 l6">
+                        <div class="b-callback__time">
+                            <i class="material-icons b-callback__timeicon">query_builder</i>
+                            <div class="input-field">
+                                <select>
+                                    <option value="" disabled selected>Укажите предпочитаемое время звонка</option>
+                                    <option>С 9 до 11</option>
+                                    <option>С 11 до 15</option>
+                                    <option>С 15 до 18</option>
+                                    <option>С 18 до 20</option>
+                                    <option>Как можно быстрее</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!--/callback section end-->
