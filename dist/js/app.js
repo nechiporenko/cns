@@ -89,6 +89,7 @@
 // видео в модальном окне
 // callback-block - покажем скрытый select когда снимаем галочку с чекбокса
 // оформление ОСАГО - по клику на линк покажем дополнительные поля формы
+// оформление select с иконками в optgroup
 
 jQuery(document).ready(function ($) {
     //
@@ -437,5 +438,25 @@ jQuery(document).ready(function ($) {
     if ($('.js-form-links').length) {
         showFormBlock();
     };
+
+    //
+    // оформление select с иконками в optgroup
+    //---------------------------------------------------------------------------------------
+    function stylingOptionGroup() {
+        $('select.js-optgroup').each(function () {
+            var $el = $(this),
+                count = $el.find('optgroup[data-img]').length,
+                $target = $el.prev('.select-dropdown'),
+                img = [];
+
+            if (count) {
+                for (var i = 0; i < count; i++) {
+                    img[i] = $el.find('optgroup[data-img]').eq(i).data('img');
+                    $target.find('li.optgroup').eq(i).prepend('<img src=' + img[i] + ' class="left" alt="" />');
+                };
+            };
+        });
+    };
+    if ($('.js-optgroup').length) { stylingOptionGroup();}
 
 });
