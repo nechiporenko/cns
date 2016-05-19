@@ -57,7 +57,7 @@
 
 
 
-//кнопка callback
+//кнопка callback - (с надрисью Заказать звонок - уже не используем!)
 .b-menu__callback{
     height:38px;
     line-height:38px;
@@ -71,6 +71,23 @@
         margin-left:15px;
     }
 }
+
+//Добавим в меню номер телефона (переделаем кнопку коллбэк)
+.b-menu__call-back{
+    @include size(38px);
+    line-height:39px;
+    font-size:rem(20px);
+    background:$primary;
+}
+.b-menu__call-link{
+    color:$primary !important;
+
+    &:hover,
+    &:active{
+        color:#3a3a3a !important;
+    }
+}
+
 
 //правое меню
 .b-menu--right{
@@ -153,7 +170,9 @@
 }
 
 .b-header--hero{
-    .b-menu__callback{
+    .b-menu__callback,
+    .b-menu__call-back,
+    .b-menu__call-link{
         display:none;
     }
     @include media($tablet){
@@ -216,18 +235,3 @@
 }
 
 
-/*Добавим в меню номер телефона (переделаем кнопку коллбэк)*/
-.b-menu__call-back{
-    @include size(38px);
-    line-height:39px;
-    font-size:rem(20px);
-    background:$primary;
-}
-.b-menu__call-link{
-    color:$primary !important;
-
-    &:hover,
-    &:active{
-        color:#3a3a3a !important;
-    }
-}

@@ -18,21 +18,54 @@ jQuery(document).ready(function ($) {
     // покажем - спрячем форму поиска
     //---------------------------------------------------------------------------------------
     (function () {
-        var $search__btn = $('[data-searchform]'),
-            $form = $('.b-search'),
-            method = {};
+            var $search__btn = $('[data-searchform]'),
+                $form = $('.b-search'),
+                $body=$('body'),
+                method = {};
 
-        method.show = function (e) {
-            e.preventDefault();
-            $form.fadeIn();
-        };
+            method.show = function () {
+                $form.addClass('active');
+                method.changeIcon('close');
+                method.closeOnClick();
+            };
+            method.hide = function () {
+                $form.removeClass('active');
+                method.changeIcon('search');
+                $body.unbind('click', method.hide);
+            };
 
-        method.hide = function () {
-            $form.hide();
-        };
+            method.changeIcon = function (event) {//поменяем иконки в хидере (в десктопной и мобильной версии)
+                if (event === 'close') {
+                    $search__btn.find('i[class^="icon-"]').removeAttr('class').addClass('icon-cross');
+                    $search__btn.find('i.material-icons').text('close');
+                } else {
+                    if (event === 'search') {
+                        $search__btn.find('i[class^="icon-"]').removeAttr('class').addClass('icon-search');
+                        $search__btn.find('i.material-icons').text('search');
+                    }
+                }
+            };
 
-        $('.b-header').on('click', '[data-searchform]', method.show);
-        $form.on('click', '.b-search__close', method.hide);
+            method.closeOnClick = function () {//доп.метод закрытия формы
+                $form.on('mouseleave', function () {
+                    $body.bind('click', method.hide);
+                }).on('mouseenter', function () {
+                    $body.unbind('click', method.hide);
+                });
+            }
+
+            $form.on('click', '.b-search__form', function (e) {
+                e.stopPropagation();
+            });
+
+            $('.b-header').on('click', '[data-searchform]', function (e) {
+                e.preventDefault();
+                if (!$form.hasClass('active')) {
+                    method.show();
+                } else {
+                    method.hide();
+                }
+            });
     })();
 
     //

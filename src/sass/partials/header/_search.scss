@@ -1,47 +1,105 @@
 ﻿@import "../../modules/_base.scss";
 /*Search Form*/
 .b-search{
-    display:none;
     position:fixed;
-    top:0;
-    left:0;
+    top:-100px; left:-200px;
     width:100%;
-    height:100%;
-    z-index:999;
-    background:#fff;
-    background:rgba(#fff, .85);
-}
+    z-index:990;
+    opacity:0;
+    will-change:top;
+    @include transition-property(transform, opacity);
+    @include transition-timing-function(ease-out);
+    @include transition-duration(.5s);
 
-.b-search__wrapper{
-    display:table;
-    width:100%;
-    height:100%;
-    table-layout:fixed;
-}
 
-.b-search__inner{
-    display:table-cell;
-    vertical-align:middle;
-}
+    &.active{
+        top:56px;
+        opacity:1;
+        @include transform(translateX(200px));
+    }
 
-.b-search__title{
-    display:block;
-    margin-bottom:30px;
-    font-family:$font-sans-alt;
-    font-weight:800;
-    color:$primary-alt;
-    line-height:1.1;
-    font-size:2rem;
-}
+    @include media($small){
 
-.b-search__close{
-    border:0;
-    background:none;
-    position:absolute;
-    top:0; right:0;
-    color:$primary-alt;
+        &.active{
+            top:64px;
+        }
+    }
 
-    &:active{
-        background:#fff;
+    @include media($tablet){
+        &.active{
+            top:94px;
+        }
     }
 }
+
+.b-search__form{
+    height:70px;
+    padding:0 20px;
+    line-height:70px;
+    background:#f9f9f9;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    position:relative;
+
+    @include media($tablet){
+        width:40%;
+        float:right;
+    }
+}
+
+input.b-search__input{
+    height:48px;
+    margin:0;
+    padding:0 40px 0 10px;
+    border:2px solid #ccc;
+    border-radius:4px;
+    background:#fff;
+    box-sizing:border-box;
+
+    &:hover,
+    &:focus,
+    &.hover{
+        border-color:$primary-alt;
+    }
+}
+
+.b-search__btn{
+    display:inline-block;
+    height:44px;
+    width:44px;
+    line-height:44px;
+    padding:0;
+    margin:0;
+    border:none;
+    background:none;
+    outline:0;
+    position:absolute;
+    top:13px;
+    right:22px;
+    text-align:center;
+    color:#ccc;
+    font-size:24px;
+
+    &:hover{
+        color:$primary-alt;
+    }
+
+    &:focus{
+        background:none;
+        color:$primary-alt;
+    }
+}
+
+@include media($tablet){
+    .b-header--hero{
+        .b-search__form{
+            background:none;
+            box-shadow:none;
+        }
+        input.b-search__input{
+            background:none;
+        }
+    }
+}
+
+
+
