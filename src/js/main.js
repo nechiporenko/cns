@@ -369,13 +369,12 @@ jQuery(document).ready(function ($) {
         $('select.js-optgroup').each(function () {
             var $el = $(this),
                 count = $el.find('optgroup[data-img]').length,
-                $target = $el.prev('.select-dropdown'),
-                img = [];
+                $target = $el.prev('.select-dropdown');
 
             if (count) {
                 for (var i = 0; i < count; i++) {
-                    img[i] = $el.find('optgroup[data-img]').eq(i).data('img');
-                    $target.find('li.optgroup').eq(i).prepend('<img src=' + img[i] + ' class="left" alt="" />');
+                    var source = $el.find('optgroup[data-img]').eq(i).data('img');
+                    $target.find('li.optgroup').eq(i).prepend('<img src=' + source + ' class="left" alt="" />');
                 };
             };
         });
