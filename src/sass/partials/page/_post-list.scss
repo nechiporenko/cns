@@ -1,0 +1,65 @@
+﻿@import "../../modules/_base.scss";
+/*Posts list*/
+.b-postlist{
+    margin:0 0 35px;
+}
+
+.b-postlist__item{
+    display:block;
+    margin-bottom:20px;
+    @extend .g-clearfix;
+}
+
+.b-postlist__thumb{
+    width:100%;
+    max-width:272px;
+    padding:0;
+    margin:0 auto 15px;
+}
+
+.b-postlist__link{
+    display:block;
+    position:relative;
+    @include transition(box-shadow .3s ease-in);
+
+    &:after{
+        content:'';
+        display:block;
+        padding-top:(180/272)*100%;
+    }
+
+    @extend .g-shadow-hover;
+}
+
+.b-postlist__img{
+    @extend .g-img-centered;
+}
+
+@include media($small){
+    .b-postlist__thumb{
+        float:left;
+        margin:0;
+    }
+    .b-postlist__inner{
+        margin-left:292px;
+    }
+}
+
+.b-postlist__title{
+    display:block;
+    margin-top:0;
+    margin-bottom:15px;
+    font-family:$font-sans-alt;
+    font-weight:800;
+    font-size:(2100% / 15);
+    color:$title-color;
+    line-height:1.1;
+
+    a{
+        color:inherit;
+        @include transition(color .2s ease-in);
+        &:hover{
+            color:$primary-alt;
+        }
+    }
+}

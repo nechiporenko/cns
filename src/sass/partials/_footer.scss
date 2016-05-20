@@ -131,8 +131,7 @@
         opacity:1;
 
         .f-logo__img{
-            -webkit-filter: none;
-            filter:none;
+            @include filter(grayscale(30%));
         }
     }
 }
@@ -140,7 +139,8 @@
 .f-logo__img{
     vertical-align:top;
     max-height:20px;
-    @include grayscale-filter;
+    @include filter(grayscale(100%));
+    @include transition(all .3s);
 
     @include media($small){
         max-height:none;

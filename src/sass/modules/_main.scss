@@ -132,3 +132,23 @@ blockquote{
         overflow:hidden;
     }
 }
+
+//картинки в контенте
+.g-img-left,
+.g-img-right{
+    display:block;
+    margin-bottom:10px;
+    max-width:100%;
+    height:auto;
+}
+
+@include media($small){
+    .g-img-left{
+        float:left;
+        margin:0 20px 5px 0;
+    }
+    .g-img-right{
+        float:right;
+        margin:0 0 5px 20px;
+    }
+}
