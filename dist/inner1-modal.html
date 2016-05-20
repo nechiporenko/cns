@@ -582,9 +582,25 @@
                 <input id="phone" type="text" class="validate b-modal-callback__input js-input-phone">
                 <label for="phone" class="b-modal-callback__label">Номер телефона</label>
             </div>
-            <p>Укажите свой номер телефона, и мы перезвоним в течение 15 минут.</p>
-            <p>&nbsp;</p>
-            <button type="submit" class="btn">Отправить</button>
+            <p>
+                <input type="checkbox" id="chk2" class="filled-in js-callback-check" checked />
+                <label for="chk2">связаться как можно быстрее</label>
+            </p>
+            <div class="b-modal-callback__time hide js-callback-check-target">
+                <i class="material-icons b-modal-callback__timeicon">query_builder</i>
+                <div class="input-field">
+                    <select>
+                        <option value="" disabled selected>Укажите предпочитаемое время звонка</option>
+                        <option>С 9 до 11</option>
+                        <option>С 11 до 15</option>
+                        <option>С 15 до 18</option>
+                        <option>С 18 до 20</option>
+                        <option>Как можно быстрее</option>
+                    </select>
+                    <label>Когда вам перезвонить?</label>
+                </div>
+            </div>
+            <button type="submit" class="btn">Перезвоните мне</button>
         </form>
         <div class="modal-footer">
             <a href="#!" class="modal-action modal-close btn-flat ">

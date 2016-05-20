@@ -89,8 +89,6 @@ input.b-callback__input{
     padding-left:36px;
     position:relative;
 
-
-
     .input-field{
         margin-top:0;
     }
@@ -104,4 +102,16 @@ input.b-callback__input{
 .b-callback__timeicon{
     position:absolute;
     left:0; top:12px;
+}
+
+//добавим такой же скрытый select в модальное окно
+.b-modal-callback{
+   //
+}
+.b-modal-callback__time{
+    padding-left:36px;
+    position:relative;
+}
+.b-modal-callback__timeicon{
+    @extend .b-callback__timeicon;
 }

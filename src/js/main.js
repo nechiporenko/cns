@@ -331,17 +331,16 @@ jQuery(document).ready(function ($) {
     //
     // callback-block - покажем скрытый select когда снимаем галочку с чекбокса
     //---------------------------------------------------------------------------------------
-    function showcallbackBlock() {
-        $('.js-callback-check').one('change', function () {
-            if (!$(this).is(':checked')) {
-                $(this).parent('p').addClass('hide');
-                $('.js-callback-check-target').removeClass('hide');
-            }
+    (function () {
+        $('.js-callback-check').each(function () {//для статичного блока на странице и формы в модальном окне
+            var $el = $(this);
+            $el.one('change', function () {//выполним только один раз
+                if (!$(this).is(':checked')) {
+                    $(this).parent('p').addClass('hide').nextAll('.js-callback-check-target').removeClass('hide');
+                };
+            });
         });
-    };
-    if ($('.js-callback-check').length) {
-        showcallbackBlock();
-    };
+    })();
 
     //
     // оформление ОСАГО - по клику на линк покажем дополнительные поля формы
