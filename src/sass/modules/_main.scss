@@ -152,3 +152,12 @@ blockquote{
         margin:0 0 5px 20px;
     }
 }
+
+
+//пытаемся пофиксить положение label в js-select
+.g-select-label{
+    position:absolute !important;
+    top:-14px !important;
+    left: .75rem !important;
+    font-size: .8rem !important;
+}
