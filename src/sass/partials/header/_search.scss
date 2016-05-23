@@ -97,6 +97,11 @@ input.b-search__input{
         }
         input.b-search__input{
             background:none;
+            color:#fff;
+
+            &:focus{
+                background:rgba(#000, .5);
+            }
         }
     }
 }
