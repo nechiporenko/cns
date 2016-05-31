@@ -146,8 +146,31 @@
 .g-action-list__links{
     margin-top:-20px;
     margin-bottom:0;
+
     p{
         margin-top:0;
+    }
+
+    a{
+        display:block;
+        position:relative;
+        padding-left:12px;
+
+        &:before{
+            content:'';
+            @include triangle(6px, $primary-alt, down);
+            border-top-width:8px;
+            position:absolute;
+            top:rem(8px); left:0;
+        }
+
+        &:hover,
+        &:active{
+            color:$primary;
+            &:before{
+                border-top-color:$primary;
+            }
+        }
     }
 
     @include media($tablet){
