@@ -1,0 +1,23 @@
+﻿@import "../../modules/_base.scss";
+/*Sortable Tables*/
+table.js-sortable{
+    thead th.js-sort-col{
+        cursor: pointer;position:relative;top:0;left:0;
+        text-decoration:underline;
+
+        &:hover{
+            background:#f3f3f3;
+        }
+    }
+
+    .arrow{
+        border-style:solid;border-width:5px;
+	display:block;position:absolute;top:50%;right:5px;font-size:0;
+	border-color:$primary-alt transparent transparent transparent;
+    line-height:0;height:0;width:0;margin-top:-2px;
+
+        &.up{
+            border-color:transparent transparent $primary-alt transparent;margin-top:-7px;
+        }
+    }
+}

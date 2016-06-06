@@ -378,6 +378,43 @@ jQuery(document).ready(function ($) {
             };
         });
     };
-    if ($('.js-optgroup').length) { stylingOptionGroup();}
+    if ($('.js-optgroup').length) { stylingOptionGroup(); }
+
+    //
+    // Сортируемые таблицы
+    //---------------------------------------------------------------------------------------
+    (function () {
+        // init
+        var aAsc = [],
+            $table = $('table.js-sortable');
+        $table.each(function () {
+            $(this).find('thead th').each(function (index) { $(this).attr('rel', index); });
+            $(this).find('th,td').each(function () { $(this).attr('value', $(this).text()); });
+        });
+
+        // table click
+        $table.on('click', '.js-sort-col', function (e) {
+            // update arrow icon
+            $(this).parents('table.js-sortable').find('span.arrow').remove();
+            $(this).append('<span class="arrow"></span>');
+
+            // sort direction
+            var nr = $(this).attr('rel');
+            aAsc[nr] = aAsc[nr] == 'asc' ? 'desc' : 'asc';
+            if (aAsc[nr] == 'desc') { $(this).find('span.arrow').addClass('up'); }
+
+            // sort rows
+            var rows = $(this).parents('table.js-sortable').find('tbody tr');
+            rows.tsort('td:eq(' + nr + ')', { order: aAsc[nr], attr: 'value' });
+
+            // fix row classes
+            rows.removeClass('alt first last');
+            var table = $(this).parents('table.js-sortable');
+            table.find('tr:even').addClass('alt');
+            table.find('tr:first').addClass('first');
+            table.find('tr:last').addClass('last');
+        });
+    })();
+    
 
 });

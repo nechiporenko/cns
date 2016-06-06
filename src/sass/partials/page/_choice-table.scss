@@ -1,6 +1,17 @@
 ﻿@import "../../modules/_base.scss";
 /*Choice table*/
-.b-ch-table{}
+.b-ch-table{
+
+    .tooltipped{
+        position:absolute;
+        top:0;
+        right:0;
+
+        .material-icons{
+            font-size:rem(20px);
+        }
+    }
+}
 
 .b-choice-table__company{
     margin:0;

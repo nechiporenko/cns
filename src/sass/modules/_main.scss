@@ -161,3 +161,18 @@ blockquote{
     left: .75rem !important;
     font-size: .8rem !important;
 }
+
+
+.g-wrap{
+    max-width:1300px;
+    margin:0 auto -40px;
+    background:#fff;
+
+    @include media(min-width 1360px){
+        //padding:0 10px;
+        box-shadow:-5px 0 15px -5px rgba(#000, .2), 5px 0 15px -5px rgba(#000, .2);
+    }
+}
+
+
+
