@@ -1,0 +1,55 @@
+﻿@import "../../modules/_base.scss";
+/*Default Tabs*/
+.b-tabs{
+    font-size:0;
+}
+.b-tabs__item{
+    font-size:rem(15px);
+    display:block;
+
+    @include media($tablet){
+        display:inline-block;
+    }
+
+    &.current{
+        .b-tabs__link{
+            border-bottom-color:$primary;
+            cursor:default;
+            opacity:1 !important;
+        }
+    }
+}
+
+.b-tabs__link{
+    display:block;
+    padding:8px 15px;
+    color:$primary;
+    text-transform:uppercase;
+    border:3px solid transparent;
+    border-left:none;
+    border-right:none;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+    &:hover{
+        opacity:.7;
+    }
+}
+
+//Вкладки с более крупным шрифтом
+.b-tabs--big{
+    .b-tabs__link{
+        font-size:rem(21px);
+    }
+}
+
+//Растянем на десктопе по ширине
+.b-tabs--justify{
+    @include media($tablet){
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        justify-content:space-between;
+    }
+}

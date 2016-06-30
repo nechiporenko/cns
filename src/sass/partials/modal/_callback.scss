@@ -8,3 +8,11 @@
 .b-modal-callback__input{
     font-size:1.64rem !important;
 }
+
+@media only screen and (max-width: 600px){
+    .b-modal-callback{
+        width:96%;
+        height:89% !important;
+        max-height:100%;
+    }
+}
