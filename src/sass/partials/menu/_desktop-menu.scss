@@ -56,6 +56,64 @@
 }
 
 
+//Двух-уровневое меню
+.b-menu__item > .b-submenu{
+    min-width:240px;
+}
+.b-submenu{
+    max-height:none !important;
+    .b-submenu{
+        display:none;
+        a{
+            padding-left:30px;
+            font-size:rem(15px);
+        }
+    }
+}
+.b-submenu__item.has-menu{
+    position:relative;
+
+    & > a{
+        margin-right:40px;
+    }
+}
+
+.b-submenu__btn{
+    display:block;
+    margin:0;
+    padding:0;
+    @include size(40px);
+    line-height:40px;
+    text-align:center;
+    font-size:rem(24px);
+    background:none;
+    border:none;
+    position:absolute;
+    top:0; right:0;
+
+    &:after{
+        content:'\e915';
+        font-family:'icomoon';
+        font-size:rem(8px);
+        @extend .vca;
+        color:$primary-alt;
+    }
+
+    &:hover,
+    &:active,
+    &:focus{
+        background:#bbb;
+    }
+
+    &.active{
+        &:after{
+            color:$primary;
+        }
+    }
+}
+
+
+
 
 //кнопка callback - (с надрисью Заказать звонок - уже не используем!)
 .b-menu__callback{
