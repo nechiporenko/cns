@@ -53,9 +53,63 @@
     }
 }
 
-
-//Двух-уровневое меню
+//Суб-меню по типу селекта с иконками
 .b-menu__item > .b-submenu{
+    min-width:280px;
+    max-height:400px;
+}
+
+.b-submenu{
+    .b-submenu a{
+        padding-left:55px;
+        font-size:rem(15px);
+    }
+}
+
+.b-submenu__icon{//иконки услуг в подменю 1-го уровня
+    float:left;
+    width:28px;
+    height:22px;
+    margin-right:10px;
+    position:relative;
+
+    &:after{
+        font-family:'icomoon';
+        font-size:rem(14px);
+        @extend .vca;
+        color:$primary;
+    }
+}
+
+.b-submenu__icon--car{
+    &:after{
+        content:'\e911';
+    }
+}
+.b-submenu__icon--swimming{
+    &:after{
+        content:'\e912';
+    }
+}
+.b-submenu__icon--swimming{
+    &:after{
+        content:'\e912';
+    }
+}
+.b-submenu__icon--house{
+    &:after{
+        content:'\e90a';
+        font-size:rem(17px);
+    }
+}
+.b-submenu__icon--hands{
+    &:after{
+        content:'\e909';
+        font-size:rem(17px);
+    }
+}
+//Двух-уровневое меню
+/*.b-menu__item > .b-submenu{
     min-width:250px;
 }
 .b-submenu{
@@ -150,7 +204,7 @@
         content:'\e909';
         font-size:rem(17px);
     }
-}
+}*/
 
 
 
