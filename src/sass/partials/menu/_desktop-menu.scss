@@ -45,18 +45,34 @@
     }
 }
 
-.b-submenu{}
-.b-submenu__item{}
-.b-submenu__item--large{//когда элементы верхнего меню будут видимы - скроем их в подменю
-    @include media($large){
-        display:none;
+
+
+//Суб-меню в 2 колонки с иконками
+.b-submenu{
+    @extend .g-clearfix;
+}
+
+#services{
+    min-width:530px;
+}
+
+#services > .b-submenu__item{
+    clear:none;
+    float:left;
+    width:50%;
+    
+    &:nth-child(2n+1){
+        clear:left;
     }
 }
 
-//Суб-меню по типу селекта с иконками
-.b-menu__item > .b-submenu{
-    min-width:280px;
-    max-height:400px;
+.b-submenu__item--large{//когда элементы верхнего меню будут видимы - скроем их в подменю
+    & > a{
+        padding-left:55px !important;
+    }
+    @include media($large){
+        display:none;
+    }
 }
 
 .b-submenu{
@@ -64,6 +80,8 @@
         padding-left:55px;
         font-size:rem(15px);
     }
+
+
 }
 
 .b-submenu__icon{//иконки услуг в подменю 1-го уровня
