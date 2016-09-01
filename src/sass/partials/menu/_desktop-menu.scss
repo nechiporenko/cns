@@ -107,11 +107,24 @@
     margin-right:10px;
     position:relative;
 
+    &:before{
+        content:'';
+        position:absolute;
+        display:block;
+        width:32px;
+        height:36px;
+        left:-4px;
+        top:-6px;
+        background:url(../img/icons/badge.svg) 100% 100% no-repeat;
+    }
+
     &:after{
+        position:absolute;
+        top:50%; left:50%;
+        @include transform(translate(-50%, -60%));
         font-family:'icomoon';
         font-size:rem(14px);
-        @extend .vca;
-        color:$primary;
+        color:#fff;
     }
 }
 
