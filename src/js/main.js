@@ -1,7 +1,7 @@
 // Application Scripts:
 
 // покажем - спрячем форму поиска
-// двух-уровневое десктоп-меню
+// при открытии десктоп-подменю покажем оверлей (затемним фон)
 // подключим мобильное меню
 // подключим модальные окна
 // подключим стилизованные select
@@ -71,44 +71,16 @@ jQuery(document).ready(function ($) {
     })();
 
     //
-    // двух-уровневое десктоп-меню
+    // при открытии десктоп-подменю покажем оверлей (затемним фон)
     //---------------------------------------------------------------------------------------
-    //(function () {
-    //    var $menu = $('.b-submenu li'),
-    //        btn = '<button type="button" class="b-submenu__btn"></button>',
-    //        activeClass = 'active',
-    //        method = {};
-
-    //    method.init = function () {//добавим кнопку, по клику на которую откроем - скроем подменю
-    //        $menu.has('ul').addClass('has-menu').append(btn);
-    //    };
-
-    //    method.hideSubmenu = function (el) {//прячем подменю
-    //        el.removeClass(activeClass).parent('li').find('ul').slideUp(400);
-    //    };
-
-    //    method.showSubmenu = function (el) {//показываем подменю
-    //        el.addClass(activeClass).parent('li').find('ul').slideDown(400);
-    //    };
-
-    //    method.hideAllSubmenu = function () {//закрываем все подменю
-    //        $menu.find('.b-submenu__btn').removeClass(activeClass);
-    //        $menu.find('ul').slideUp(400);
-    //    };
-
-    //    method.init();
-
-    //    $menu.on('click', '.b-submenu__btn', function (e) {
-    //        e.stopPropagation();//без этого закроется родительское меню
-    //        var $el = $(this);
-    //        if ($el.hasClass(activeClass)) {
-    //            method.hideSubmenu($el);
-    //        } else {
-    //            method.hideAllSubmenu();
-    //            method.showSubmenu($el);
-    //        };
-    //    });
-    //})();
+    (function () {
+        var $menu_btn = $('.b-menu--left').find('.b-menu__dropdown');
+            
+        $menu_btn.append('<div class="b-menu__overlay"></div>')
+        .on('click', '.b-menu__overlay', function (e) {//добавили оверлей, при клике по нему не меняем location.href
+            e.preventDefault();
+        });
+    })();
 
     //
     // подключим мобильное меню
@@ -198,7 +170,6 @@ jQuery(document).ready(function ($) {
     if ($('.js-header').length) {
         changeHeader();
     }
-
 
     //
     // хиро слайдер
