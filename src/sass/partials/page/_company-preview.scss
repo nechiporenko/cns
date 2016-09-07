@@ -1,0 +1,61 @@
+﻿@import "../../modules/_base.scss";
+/*About Company - Preview block*/
+.b-company{
+    margin:15px 0;
+    background:#fff;
+    @extend .g-clearfix;
+}
+
+.b-company__link{
+    display:block;
+    @include size(120px);
+    margin:0 auto 15px;
+    position:relative;
+}
+
+.b-company__logo{
+    @extend .g-img-centered;
+}
+
+.b-company__entry{
+    font-size:rem(15px);
+    color:#000;
+}
+
+.b-company__info{
+    height:92px;
+    overflow:hidden;
+    position:relative;
+
+    &:after{
+        content:'';
+        position:absolute;
+        left:0; right:0;
+        top:30px; bottom:0;
+        @include linear-gradient(to bottom, rgba(#fff, .2), rgba(#fff, .98));
+    }
+}
+
+@include media($small){
+    .b-company__link{
+        float:left;
+        margin:0;
+    }
+
+    .b-company__entry{
+        margin-left:150px;
+        font-size:rem(16px);
+    }
+}
+
+@include media($tablet){
+    .b-company__entry{
+        font-size:rem(17px);
+    }
+}
+
+@include media($large){
+    .b-company__entry{
+        font-size:rem(18px);
+    }
+}
