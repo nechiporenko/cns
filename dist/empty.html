@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Empty Page</title>
+    <meta name="description" content="Page Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="js/vendor/modernizr.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="b-header navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!--Logo start-->
+                    <a href="index.html" class="b-logo">
+                        <span class="b-logo__img">
+                            <svg height="100%" width="100%" version="1.1" y="0" x="0" viewBox="0 0 78.708664 98.000002">
+                                <g transform="matrix(1.5433 0 0 1.5433 -95.531 -61.887)">
+                                    <g>
+                                        <path fill="#f68b1f" d="m87.4 40.1c-14.1 0-25.5 11.4-25.5 25.5 0 13.7 23.2 36.5 24.1 37.4 0.4 0.4 0.9 0.6 1.4 0.6s1-0.2 1.4-0.6c1-1 24.1-23.8 24.1-37.4 0-14-11.4-25.5-25.5-25.5z" />
+                                        <path fill="#fff" d="m89.2 66.5h12.6c0-7.9-6.4-14.3-14.3-14.3s-14.3 6.4-14.3 14.3h13.2v8.7 0.1 0.1c0 1-0.8 1.8-1.8 1.8s-1.8-0.8-1.8-1.8c0-0.8-0.6-1.4-1.4-1.4s-1.4 0.6-1.4 1.4c0 2.6 2.1 4.6 4.6 4.6 2.6 0 4.6-2.1 4.6-4.6v-0.1-0.1-8.7z" />
+		                            </g>
+	                            </g>
+                            </svg>
+                        </span>
+                        <span class="b-logo__title">Центр народного страхования</span>
+                    </a>
+                    <!--/Logo end-->
+
+                    <!--Mobile buttons start-->
+                    <button type="button" data-activates="mobile-menu" class="button-collapse b-header__btn">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <button type="button" class="b-header__btn modal-trigger" data-target="callback">
+                        <i class="material-icons">phone</i>
+                    </button>
+                    <button type="button" class="b-header__btn" data-searchform>
+                        <i class="material-icons">search</i>
+                    </button>
+                    <!--/Mobile buttons end-->
+
+                    <!--Left desktop menu start-->
+                    <ul class="b-menu b-menu--left">
+                        <li class="b-menu__item active">
+                            <a class="dropdown-button" href="#!" data-activates="services" data-constrainwidth="false">
+                                Все услуги
+                                <span class="icon-triangle-down"></span>
+                            </a>
+                            <ul id="services" class="dropdown-content b-submenu">
+                                <li class="b-submenu__item">
+                                    <a href="#!">Автомобили</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Здоровье</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Недвижимость</a>
+                                </li>
+                                <li class="b-submenu__item">
+                                    <a href="#!">Ответственность</a>
+                                </li>
+                                <li class="divider b-submenu__item b-submenu__item--large"></li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#!">Для бизнеса</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#!">О нас</a>
+                                </li>
+                                <li class="b-submenu__item b-submenu__item--large">
+                                    <a href="#!">Контакты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Отзывы</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Для бизнеса</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">О нас</a>
+                        </li>
+                        <li class="b-menu__item b-menu__item--large">
+                            <a href="#!">Контакты</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <button type="button" class="btn-floating waves-effect waves-light modal-trigger b-menu__call-back" data-target="callback"><span class="icon-phone"></span></button>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="tel:0800758758" class="b-menu__call-link">0 800-758-758</a>
+                        </li>
+                    </ul>
+                    <!--/Left desktop menu end-->
+
+                    <!--Right desktop menu start-->
+                    <ul class="b-menu b-menu--right">
+                        <li class="b-menu__item">
+                            <a href="#" data-searchform>
+                                <i class="icon-search"></i>
+                            </a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#" class="b-menu__userlink">
+                               <span class="b-menu__user">
+                                   <i class="icon-user"></i>
+                               </span>
+                            </a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#!" class="dropdown-button" data-activates="lang" data-constrainwidth="false" data-alignment="right">
+                                рус
+                                <span class="icon-triangle-down"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--/Right desktop menu end-->
+                </div>
+            </div>
+            
+            <!--Lang menu start-->
+            <ul id="lang" class="dropdown-content">
+                <li><a href="#" hreflang="ru">Русский</a></li>
+                <li><a href="#" hreflang="uk">Украинский</a></li>
+                <li><a href="#" hreflang="en">Английский</a></li>
+            </ul>
+            <!--/Lang menu end-->
+
+            <!--Mobile menu start-->
+            <ul class="side-nav" id="mobile-menu">
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Все услуги<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!">Автомобили</a></li>
+                                    <li><a href="#!">Здоровье</a></li>
+                                    <li><a href="#!">Недвижимость</a></li>
+                                    <li><a href="#!">Ответственность    </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#!">Отзывы</a></li>
+                <li><a href="#!">Для бизнеса</a></li>
+                <li><a href="#!">О нас</a></li>
+                <li><a href="#!">Контакты</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Войти...</a></li>
+            </ul>
+            <!--/Mobile menu end-->
+
+            <!--Search form start-->
+            <div class="b-search">
+                <div class="container">
+                    <form class="b-search__form">
+                        <label class="g-visuallyhidden">Поиск по сайту</label>
+                        <input type="text" class="b-search__input" placeholder="Искать..." />
+                        <button type="submit" class="b-search__btn"><span class="icon-search"></span></button>
+                    </form>
+                </div>
+            </div>
+            <!--/Search form end-->
+        </nav>
+    </header>
+   
+    <div class="g-wrap">
+        <main class="b-page">
+
+            <!--section main content start-->
+            <section class="container">
+                <h1 class="b-page__title">Page title</h1>
+                <!--breadcrumbs start-->
+                <ul class="b-crumb">
+                    <li class="b-crumb__item" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <a href="#" class="b-crumb__link" itemprop="url">
+                            <span itemprop="title">Главная</span>
+                        </a>
+                    </li>
+                    <li class="b-crumb__item active">
+                        <span class="b-crumb__link">Page Title</span>
+                    </li>
+                </ul>
+                <!--/breadcrumbs end-->
+                
+            </section>
+
+            <!--modal window callback start-->
+            <div id="callback" class="modal modal-fixed-footer b-modal-callback">
+                <form class="modal-content">
+                    <h5>Заказать обратный звонок</h5>
+                    <div class="input-field">
+                        <input id="phone" type="text" class="validate b-modal-callback__input js-input-phone">
+                        <label for="phone" class="b-modal-callback__label">Номер телефона</label>
+                    </div>
+                    <p>
+                        <input type="checkbox" id="chk2" class="filled-in js-callback-check" checked />
+                        <label for="chk2">связаться как можно быстрее</label>
+                    </p>
+                    <div class="b-modal-callback__time hide js-callback-check-target">
+                        <i class="material-icons b-modal-callback__timeicon">query_builder</i>
+                        <div class="input-field">
+                            <select>
+                                <option value="" disabled selected>Укажите предпочитаемое время звонка</option>
+                                <option>С 9 до 11</option>
+                                <option>С 11 до 15</option>
+                                <option>С 15 до 18</option>
+                                <option>С 18 до 20</option>
+                                <option>Как можно быстрее</option>
+                            </select>
+                            <label>Когда вам перезвонить?</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Перезвоните мне</button>
+                </form>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close btn-flat ">
+                        <i class="material-icons">close</i>
+                    </a>
+                </div>
+            </div>
+            <!--/modal window callback end-->
+        </main>
+
+        <footer class="b-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l5">
+                        <div class="row">
+                            <div class="col s12 m6 l6">
+                                <span class="b-footer__title">Продукты</span>
+                                <ul class="f-menu">
+                                    <li class="f-menu__item">
+                                        <a href="#!" class="f-menu__link">Для бизнеса</a>
+                                    </li>
+                                    <li class="f-menu__item">
+                                        <a href="#!" class="f-menu__link">Страховые компании</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col s12 m6 l6">
+                                <span class="b-footer__title">О компании</span>
+                                <ul class="f-menu">
+                                    <li class="f-menu__item">
+                                        <a href="#!" class="f-menu__link">Контакты</a>
+                                    </li>
+                                    <li class="f-menu__item">
+                                        <a href="#!" class="f-menu__link">Отзывы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--/row-->
+                    </div>
+                    <div class="col s12 m12 l7">
+                        <div class="row">
+                            <div class="col s12 m6 l5">
+                                <div class="b-footer__contacts">
+                                    <a href="tel:0800758758" class="b-footer__tel">0 800 758 758</a>
+                                    <a href="mailto:info@narodna.ua" class="b-footer__mail">info@narodna.ua</a>
+
+                                    <ul class="f-social">
+                                        <li class="f-social__item">
+                                            <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                                <i class="icon-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="f-social__item">
+                                            <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                                <i class="icon-vk"></i>
+                                            </a>
+                                        </li>
+                                        <li class="f-social__item">
+                                            <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                                <i class="icon-google-plus"></i>
+                                            </a>
+                                        </li>
+                                        <li class="f-social__item">
+                                            <a href="#" target="_blank" rel="nofollow" class="f-social__link">
+                                                <i class="icon-twitter"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l6 offset-l1">
+                                <ul class="f-logo">
+                                    <li class="f-logo__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                            <img src="img/f-logo-visa.png" class="f-logo__img" alt="Visa" />
+                                        </a>
+                                    </li>
+                                    <li class="f-logo__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                            <img src="img/f-logo-master.png" class="f-logo__img" alt="Master Card" />
+                                        </a>
+                                    </li>
+                                    <li class="f-logo__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                            <img src="img/f-logo-privat.png" class="f-logo__img" alt="Privatbank" />
+                                        </a>
+                                    </li>
+                                    <li class="f-logo__item">
+                                        <a href="#" target="_blank" rel="nofollow" class="f-logo__link">
+                                            <img src="img/f-logo-24.png" class="f-logo__img" alt="Privat24" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--/row-->
+                    </div>
+                </div><!--/row-->
+            </div><!--/container-->
+        </footer>
+    </div>
+    
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

@@ -37,6 +37,10 @@
         border-width: 0;
         border-top: 1px solid #e0e0e0;
     }
+
+    @include media($tablet){
+        min-height:70vh;
+    }
 }
 
 .b-page__section{
@@ -91,7 +95,7 @@
 .b-more{
     color:#6c6c6c;
     font-size:18px;
-    white-space:nowrap;
+    //white-space:nowrap;
     @include transition(color .3s);
 
     &:hover{
