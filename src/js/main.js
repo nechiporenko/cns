@@ -97,7 +97,7 @@ jQuery(document).ready(function ($) {
     //
     // подключим тултипы
     //---------------------------------------------------------------------------------------
-    $('.tooltipped').tooltip({ delay: 50 });
+    $('.tooltipped, .js-tooltip').tooltip({ delay: 50 });
 
     //
     // вкладки

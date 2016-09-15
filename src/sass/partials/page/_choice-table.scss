@@ -13,6 +13,12 @@
     }
 }
 
+.b-ch-table--compact{
+    tbody td{
+        padding:5px;
+    }
+}
+
 .b-choice-table__company{
     margin:0;
     padding:0;
@@ -52,6 +58,7 @@
 
 .b-ch-table__price{
     display:block;
+    white-space:nowrap;
     margin:10px 0;
     font-size:(2100%/15);
     font-weight:600;
@@ -63,6 +70,20 @@
 .b-ch-table__price-2{
     color:$primary-alt1;
 }
+
+.b-ch-table__price--old{
+    margin:0;
+    font-size:(1500%/15);
+    color:grey;
+    text-decoration:line-through;
+    line-height:1;
+
+    & + .b-ch-table__price{
+        margin:0;
+    }
+}
+
+
 
 .b-ch-table__btn{
     background:$primary-alt1;
