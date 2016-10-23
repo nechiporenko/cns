@@ -269,7 +269,29 @@
                                 <label>Добавьте нужное количество путешественников и укажите их возраст:</label>
                             </div>
                         </div>
+
+
                         <div class="row js-age">
+                            <div class="col s6 m4 l3 js-age-block">
+                                <div class="col s3 input-field g-hidden">
+                                    <button type="button" class="btn-floating waves-effect waves-light red js-age-del" disabled title="Удалить поле">
+                                        <i class="material-icons">remove</i>
+                                    </button>
+                                </div>
+                                <div class="col s6 input-field">
+                                    <i class="icon-user prefix grey-text"></i>
+                                    <input type="text" id="t_user1" placeholder="30" required />
+                                    <label for="t_user1">Возраст</label>
+                                </div>
+                                <div class="col s3 input-field">
+                                    <button type="button" class="btn-floating waves-effect waves-light js-age-add" title="Добавить поле">
+                                        <i class="material-icons">add</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--<div class="row js-age">
                             <div class="col s12 m8 l4 js-age-block">
                                 <div class="row">
                                     <div class="col s2 input-field">
@@ -289,7 +311,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><!--/row-->
+                        </div>-->
                         <button type="submit" class="btn btn-large">Подобрать тариф</button>
                     </form>
                 </div>
@@ -888,7 +910,7 @@
     </script>
     <!--/pikaday scripts-->
 
-    <!--add/remove age-input to tourism-form-->
+    <!--add/remove age-input to tourism form-->
     <script>
         $(document).ready(function () {
             var $row = $('.js-age'),
@@ -902,6 +924,8 @@
                 block_index++;
                 block_count++;
 
+                $item.find('.col').filter(':first').removeClass('g-hidden');
+
                 var $input = $item.find('input'),
                     $label = $item.find('label'),
                     input_id = id + block_index;
@@ -910,11 +934,7 @@
                 $label.attr('for', input_id);
                 
                 $item.find('.js-age-add, .js-age-del').prop('disabled', false);
-                //$item.find('.js-age-del').prop('disabled', false);
-                
-
                 $row.find('.js-age-add, .js-age-del').prop('disabled', true);
-                //$row.find('.js-age-del').prop('disabled', true);
 
                 $row.append($item);
             });
