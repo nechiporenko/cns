@@ -114,3 +114,101 @@
     color:$title-color;
     font-size:(2100%/15);
 }
+
+/*Icons - levels*/
+%i {
+    display:inline-block;
+    vertical-align:middle;
+    overflow:hidden;
+    white-space:nowrap;
+    text-indent:101%;
+    background-image: url('../img/icons/levels.svg');
+	background-repeat: no-repeat;
+    width: 64px;
+	height: 64px;
+    outline:0;
+    user-select:none;
+}
+
+.i-level-01{
+    @extend %i;
+    background-position: 0 0;
+}
+
+.i-level-02{
+    @extend %i;
+    background-position: 0 -64px;
+}
+
+.i-level-03{
+    @extend %i;
+    background-position: 0 -128px;
+}
+.i-level-04{
+    @extend %i;
+    background-position: 0 -192px;
+}
+.i-level-05{
+    @extend %i;
+    background-position: 0 -256px;
+}
+.i-level-06{
+    @extend %i;
+    background-position: 0 -320px;
+}
+.i-level-07{
+    @extend %i;
+    background-position: 0 -384px;
+}
+.i-level-08{
+    @extend %i;
+    background-position: 0 -448px;
+}
+.i-level-09{
+    @extend %i;
+    background-position: 0 -512px;
+}
+.i-level-10{
+    @extend %i;
+    background-position: 0 -576px;
+}
+
+/*Labels*/
+.b-ch-table-lbl{
+    width:160px;
+    margin:0 auto;
+    padding:0;
+    position:relative;
+    text-align:left;
+}
+.b-ch-table-lbl__img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+.b-ch-table-lbl__entry{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding:0 25px 0 15px;
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    line-height:1.2;
+    color:#fff;
+    font-size:rem(13px);
+    font-weight:600;
+    text-transform:uppercase;
+    overflow:hidden;
+}
+
+.b-ch-table-lbl__content{
+    width:100%;
+    margin:auto;
+
+    small{
+        display:block;
+        font-weight:400;
+        text-transform:none;
+    }
+}
+
